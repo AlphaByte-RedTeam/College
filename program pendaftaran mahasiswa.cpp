@@ -140,7 +140,7 @@ int main (){
         bool checker2 = false;
 
         cout << "Calon Mahasiswa Ke-" << i+1 << endl;
-        cout << "=================================================\n";
+        cout << "=================================================";
 
         cout << "Nama: ";
         cin.ignore();
