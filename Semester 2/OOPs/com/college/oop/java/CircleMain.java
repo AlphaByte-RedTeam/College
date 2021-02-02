@@ -9,16 +9,18 @@ public class CircleMain {
         Scanner input = new Scanner(System.in);
 
         // Making new object from AreaOfCircle Class
-        AreaOfCircle obj_areaOfCircle = new AreaOfCircle();
+        // Constructor
+        Formula obj = new Formula();
+
         System.out.print( "Input Radius (cm): " );
         // Getting input;
-        obj_areaOfCircle.radius = input.nextInt();
+        obj.radius = input.nextInt();
 
         // Printing the result in decimal
-        System.out.println( "The area of circle is: " + obj_areaOfCircle.calculate() );
+        System.out.println( "The area of circle is: " + obj.circle() );
 
         /// Printing the result in whole number
-        System.out.println( "The area of circle is: " + Math.round(obj_areaOfCircle.calculate()) );
+        System.out.println( "The area of circle is: " + Math.round(obj.circle()) );
 
         // This is to close the Scanner
         // Otherwise, the scanner class is resource leaked
