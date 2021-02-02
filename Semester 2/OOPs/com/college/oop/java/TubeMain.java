@@ -7,7 +7,7 @@ public class TubeMain {
     public static void main(String[] args) {
         // Making the constructor
         Scanner input = new Scanner( System.in );
-        Formula obj = new Formula();
+        ClsFormula obj = new ClsFormula();
 
         // Getting input from user
         System.out.print( "Input the Area (cm): " );
