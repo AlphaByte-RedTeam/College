@@ -10,7 +10,7 @@ public class CircleMain {
 
         // Making new object from AreaOfCircle Class
         // Constructor
-        Formula obj = new Formula();
+        ClsFormula obj = new ClsFormula();
 
         System.out.print( "Input Radius (cm): " );
         // Getting input;
