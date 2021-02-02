@@ -20,7 +20,7 @@ public class CircleMain {
         System.out.println( "The area of circle is: " + obj.circle() );
 
         /// Printing the result in whole number
-        System.out.println( "The area of circle is: " + Math.round(obj.circle()) );
+        System.out.println( "The area of circle is: " + Math.round(obj.circle()) + " without decimal point." );
 
         // This is to close the Scanner
         // Otherwise, the scanner class is resource leaked
