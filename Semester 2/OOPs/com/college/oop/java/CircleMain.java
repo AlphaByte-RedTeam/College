@@ -17,7 +17,7 @@ public class CircleMain {
         obj.radius = input.nextInt();
 
         // Printing the result in decimal
-        System.out.println( "The area of circle is: " + obj.circle() );
+        System.out.println( "The area of circle is: " + Math.round(obj.circle() * 100.0) / 100.0 );
 
         /// Printing the result in whole number
         System.out.println( "The area of circle is: " + Math.round(obj.circle()) + " without decimal point." );
