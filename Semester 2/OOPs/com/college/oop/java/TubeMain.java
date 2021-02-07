@@ -17,7 +17,7 @@ public class TubeMain {
         obj.height = input.nextInt();
 
         // Printing the result
-        System.out.println( "The result is " + obj.tube() );
+        System.out.println( "The result is " + Math.round(obj.tube() * 100.0) / 100.0 );
 
         System.out.println( "The result is " + Math.round(obj.tube()) + " without decimal point." );
 
