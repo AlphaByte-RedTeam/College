@@ -23,10 +23,10 @@ public class UTS4_Main {
         while ( isStillRunning ) {
             makeLine( length );
 
-            System.out.print( "Input NID: " );
+            System.out.print( "Input NID    : " );
             dosenTetap.NID = input.nextLine();
 
-            System.out.print( "Input Nama: " );
+            System.out.print( "Input Nama   : " );
             dosenTetap.name = input.nextLine();
 
             System.out.print( "Jenis Kelamin: " );
@@ -34,7 +34,7 @@ public class UTS4_Main {
 
             dosenTetap.positions();
 
-            System.out.print( "Gaji: " );
+            System.out.print( "Gaji         : " );
             dosenTetap.salary = input.nextDouble();
 
             makeLine( length );
