@@ -4,5 +4,5 @@ public class UTS4_Dosen {
     String gender;
     String positions;
     int position;
-    double salary; // Janice: float gaji
+    double salary;
 }
