@@ -45,7 +45,7 @@ public class UTS4_DosenTetap extends UTS4_Dosen {
 
     public String positions() {
         Scanner input = new Scanner( System.in );
-        System.out.print( "Kepangkatan: " );
+        System.out.print( "Kepangkatan  : " );
         position = input.nextInt();
 
         switch( position ) {
