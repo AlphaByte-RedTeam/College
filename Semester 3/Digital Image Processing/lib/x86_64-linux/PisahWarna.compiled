@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1625802185"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -gw2 -godwarfsets -gl -l -vewnhibq &quot;-Fi/media/avv-kali/HDD/AndrewData/IT/Computer Science/Programming/College Life UBM/Semester 3/Digital Image Processing/lib/x86_64-linux&quot; -Fu/usr/share/lazarus/2.2.0RC1/lcl/units/x86_64-linux/gtk2 -Fu/usr/share/lazarus/2.2.0RC1/lcl/units/x86_64-linux -Fu/usr/share/lazarus/2.2.0RC1/components/freetype/lib/x86_64-linux -Fu/usr/share/lazarus/2.2.0RC1/components/lazutils/lib/x86_64-linux -Fu/usr/share/lazarus/2.2.0RC1/packager/units/x86_64-linux &quot;-Fu/media/avv-kali/HDD/AndrewData/IT/Computer Science/Programming/College Life UBM/Semester 3/Digital Image Processing/&quot; &quot;-FU/media/avv-kali/HDD/AndrewData/IT/Computer Science/Programming/College Life UBM/Semester 3/Digital Image Processing/lib/x86_64-linux/&quot; &quot;-FE/media/avv-kali/HDD/AndrewData/IT/Computer Science/Programming/College Life UBM/Semester 3/Digital Image Processing/&quot; &quot;-o/media/avv-kali/HDD/AndrewData/IT/Computer Science/Programming/College Life UBM/Semester 3/Digital Image Processing/PisahWarna&quot; -dLCL -dLCLgtk2 PisahWarna.lpr"/>
+  <Complete Value="False"/>
+</CONFIG>
