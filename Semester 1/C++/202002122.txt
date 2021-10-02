@@ -1,0 +1,6 @@
+Nama Mahasiswa  : Hansel Vel
+NIM             : 202002122
+Fakultas        : Fakultas Pertanian
+Jurusan         : Agroteknologi
+Potongan/Diskon : 4799999
+Biaya Bersih    : 27200001

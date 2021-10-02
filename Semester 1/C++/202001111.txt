@@ -1,0 +1,6 @@
+Nama Mahasiswa  : James Bond
+NIM             : 202001111
+Fakultas        : Fakultas Teknik
+Jurusan         : Teknik Informatika
+Potongan/Diskon : 8999999
+Biaya Bersih    : 21000001
