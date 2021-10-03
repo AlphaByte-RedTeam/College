@@ -1,0 +1,8 @@
+object FormUtama: TFormUtama
+  Left = 699
+  Height = 648
+  Top = 183
+  Width = 930
+  Caption = 'Operasi Tingkat Titik'
+  LCLVersion = '2.0.12.0'
+end

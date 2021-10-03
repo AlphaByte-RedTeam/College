@@ -1,8 +1,97 @@
 object FormUtama: TFormUtama
-  Left = 699
+  Left = 700
   Height = 648
-  Top = 183
+  Top = 179
   Width = 930
   Caption = 'Operasi Tingkat Titik'
+  ClientHeight = 648
+  ClientWidth = 930
   LCLVersion = '2.0.12.0'
+  object btnLoad: TButton
+    Left = 24
+    Height = 25
+    Top = 16
+    Width = 75
+    Caption = 'Load'
+    OnClick = btnLoadClick
+    TabOrder = 0
+  end
+  object btnSave: TButton
+    Left = 24
+    Height = 25
+    Top = 71
+    Width = 75
+    Caption = 'Save'
+    TabOrder = 1
+  end
+  object btnWarna: TButton
+    Left = 143
+    Height = 25
+    Top = 17
+    Width = 75
+    Caption = 'Warna'
+    TabOrder = 2
+  end
+  object btnInvers: TButton
+    Left = 143
+    Height = 25
+    Top = 71
+    Width = 75
+    Caption = 'Invers'
+    TabOrder = 3
+  end
+  object btnGray: TButton
+    Left = 264
+    Height = 25
+    Top = 17
+    Width = 75
+    Caption = 'Gray'
+    TabOrder = 4
+  end
+  object btnBiner: TButton
+    Left = 376
+    Height = 25
+    Top = 17
+    Width = 75
+    Caption = 'Biner'
+    TabOrder = 5
+  end
+  object btnBrightness: TButton
+    Left = 376
+    Height = 25
+    Top = 71
+    Width = 75
+    Caption = 'Brightness'
+    TabOrder = 6
+  end
+  object btnContrast: TButton
+    Left = 376
+    Height = 25
+    Top = 128
+    Width = 75
+    Caption = 'Contrast'
+    TabOrder = 7
+  end
+  object imgOriginal: TImage
+    Left = 24
+    Height = 250
+    Top = 255
+    Width = 250
+    AutoSize = True
+  end
+  object imgEdited: TImage
+    Left = 361
+    Height = 250
+    Top = 256
+    Width = 250
+    AutoSize = True
+  end
+  object openDialog: TOpenDialog
+    Left = 272
+    Top = 64
+  end
+  object saveDialog: TSaveDialog
+    Left = 274
+    Top = 128
+  end
 end
