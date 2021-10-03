@@ -1,14 +1,14 @@
 object FormUtama: TFormUtama
   Left = 699
-  Height = 650
-  Top = 182
+  Height = 665
+  Top = 179
   Width = 934
-  Caption = 'Praktikum 1 Load Image dan Memisahkan Warna'
-  ClientHeight = 650
+  Caption = 'Jenis Citra Digital'
+  ClientHeight = 665
   ClientWidth = 934
   LCLVersion = '2.0.12.0'
   object btnLoad: TButton
-    Left = 24
+    Left = 32
     Height = 25
     Top = 24
     Width = 75
@@ -16,59 +16,82 @@ object FormUtama: TFormUtama
     OnClick = btnLoadClick
     TabOrder = 0
   end
-  object btnWarna: TButton
-    Left = 128
+  object btnSave: TButton
+    Left = 136
     Height = 25
     Top = 24
     Width = 75
-    Caption = 'Warna'
+    Caption = 'Save'
+    OnClick = btnSaveClick
     TabOrder = 1
   end
   object btnRed: TButton
-    Left = 232
+    Left = 240
     Height = 25
     Top = 24
     Width = 75
     Caption = 'Red'
+    OnClick = btnRedClick
     TabOrder = 2
   end
   object btnGreen: TButton
-    Left = 338
+    Left = 344
     Height = 25
     Top = 24
     Width = 75
     Caption = 'Green'
+    OnClick = btnGreenClick
     TabOrder = 3
   end
   object btnBlue: TButton
-    Left = 440
+    Left = 448
     Height = 25
     Top = 24
     Width = 75
     Caption = 'Blue'
+    OnClick = btnBlueClick
     TabOrder = 4
   end
   object btnGray: TButton
-    Left = 544
+    Left = 552
     Height = 25
     Top = 24
     Width = 75
     Caption = 'Gray'
+    OnClick = btnGrayClick
     TabOrder = 5
   end
   object imgOriginal: TImage
-    Left = 24
+    Left = 32
     Height = 250
-    Top = 80
+    Top = 88
     Width = 250
     AutoSize = True
   end
+  object trackBar: TTrackBar
+    Left = 32
+    Height = 25
+    Top = 360
+    Width = 385
+    Max = 255
+    Position = 127
+    TabOrder = 6
+  end
+  object btnBiner: TButton
+    Left = 446
+    Height = 25
+    Top = 361
+    Width = 75
+    Caption = 'Biner'
+    OnClick = btnBinerClick
+    TabOrder = 7
+  end
   object openDialog: TOpenDialog
-    Left = 376
-    Top = 96
+    Left = 665
+    Top = 28
   end
   object saveDialog: TSaveDialog
-    Left = 472
-    Top = 96
+    Left = 737
+    Top = 28
   end
 end
