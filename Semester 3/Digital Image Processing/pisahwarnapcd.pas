@@ -25,8 +25,6 @@ type
     procedure btnCloseClick(Sender: TObject);
     procedure btnLoadClick(Sender: TObject);
     procedure btnSplitClick(Sender: TObject);
-    // procedure imgOriginalClick(Sender: TObject);
-    // procedure imgRedClick(Sender: TObject);
   private
 
   public
@@ -82,16 +80,6 @@ begin
       end;
     end;
   end;
-end;
-
-procedure TForm1.imgOriginalClick(Sender: TObject);
-begin
-
-end;
-
-procedure TForm1.imgRedClick(Sender: TObject);
-begin
-
 end;
 
 end.

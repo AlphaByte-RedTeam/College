@@ -42,7 +42,7 @@ implementation
 
 { TForm1 }
 
-// uses Windows;
+uses Windows;
 
 // Global Variable Declaration
 var
