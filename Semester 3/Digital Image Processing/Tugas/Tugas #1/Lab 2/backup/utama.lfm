@@ -1,0 +1,89 @@
+object FormUtama: TFormUtama
+  Left = 699
+  Height = 650
+  Top = 182
+  Width = 934
+  Caption = 'Praktikum 1 Load Image dan Memisahkan Warna'
+  ClientHeight = 650
+  ClientWidth = 934
+  OnClick = FormClick
+  LCLVersion = '2.0.12.0'
+  object btnLoad: TButton
+    Left = 24
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Load'
+    OnClick = btnLoadClick
+    TabOrder = 0
+  end
+  object btnWarna: TButton
+    Left = 232
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Warna'
+    OnClick = btnWarnaClick
+    TabOrder = 1
+  end
+  object btnRed: TButton
+    Left = 336
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Red'
+    OnClick = btnRedClick
+    TabOrder = 2
+  end
+  object btnGreen: TButton
+    Left = 442
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Green'
+    OnClick = btnGreenClick
+    TabOrder = 3
+  end
+  object btnBlue: TButton
+    Left = 544
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Blue'
+    OnClick = btnBlueClick
+    TabOrder = 4
+  end
+  object btnGray: TButton
+    Left = 648
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Gray'
+    OnClick = btnGrayClick
+    TabOrder = 5
+  end
+  object imgOriginal: TImage
+    Left = 24
+    Height = 250
+    Top = 80
+    Width = 250
+    AutoSize = True
+  end
+  object btnSave: TButton
+    Left = 128
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Save'
+    OnClick = btnSaveClick
+    TabOrder = 6
+  end
+  object openDialog: TOpenDialog
+    Left = 376
+    Top = 96
+  end
+  object saveDialog: TSaveDialog
+    Left = 472
+    Top = 96
+  end
+end
