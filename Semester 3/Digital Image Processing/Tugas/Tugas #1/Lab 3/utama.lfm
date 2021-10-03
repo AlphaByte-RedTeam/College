@@ -22,6 +22,7 @@ object FormUtama: TFormUtama
     Top = 71
     Width = 75
     Caption = 'Save'
+    OnClick = btnSaveClick
     TabOrder = 1
   end
   object btnWarna: TButton
@@ -30,6 +31,7 @@ object FormUtama: TFormUtama
     Top = 17
     Width = 75
     Caption = 'Warna'
+    OnClick = btnWarnaClick
     TabOrder = 2
   end
   object btnInvers: TButton
@@ -38,6 +40,7 @@ object FormUtama: TFormUtama
     Top = 71
     Width = 75
     Caption = 'Invers'
+    OnClick = btnInversClick
     TabOrder = 3
   end
   object btnGray: TButton
@@ -46,6 +49,7 @@ object FormUtama: TFormUtama
     Top = 17
     Width = 75
     Caption = 'Gray'
+    OnClick = btnGrayClick
     TabOrder = 4
   end
   object btnBiner: TButton
@@ -54,6 +58,7 @@ object FormUtama: TFormUtama
     Top = 17
     Width = 75
     Caption = 'Biner'
+    OnClick = btnBinerClick
     TabOrder = 5
   end
   object btnBrightness: TButton
@@ -62,6 +67,7 @@ object FormUtama: TFormUtama
     Top = 71
     Width = 75
     Caption = 'Brightness'
+    OnClick = btnBrightnessClick
     TabOrder = 6
   end
   object btnContrast: TButton
@@ -70,6 +76,7 @@ object FormUtama: TFormUtama
     Top = 128
     Width = 75
     Caption = 'Contrast'
+    OnClick = btnContrastClick
     TabOrder = 7
   end
   object imgOriginal: TImage
@@ -82,9 +89,81 @@ object FormUtama: TFormUtama
   object imgEdited: TImage
     Left = 361
     Height = 250
-    Top = 256
+    Top = 255
     Width = 250
     AutoSize = True
+  end
+  object tBarBiner: TTrackBar
+    Left = 477
+    Height = 25
+    Top = 17
+    Width = 316
+    Max = 255
+    OnChange = tBarBinerChange
+    Position = 127
+    TabOrder = 8
+  end
+  object tBarBrightness: TTrackBar
+    Left = 477
+    Height = 25
+    Top = 71
+    Width = 316
+    Max = 255
+    OnChange = tBarBrightnessChange
+    Position = 0
+    TabOrder = 9
+  end
+  object tBarContrast: TTrackBar
+    Left = 477
+    Height = 25
+    Top = 128
+    Width = 316
+    Max = 255
+    OnChange = tBarContrastChange
+    Position = 0
+    TabOrder = 10
+  end
+  object tBarG: TTrackBar
+    Left = 477
+    Height = 25
+    Top = 192
+    Width = 100
+    Max = 5
+    OnChange = tBarGChange
+    Position = 0
+    TabOrder = 11
+  end
+  object editBiner: TEdit
+    Left = 808
+    Height = 23
+    Top = 19
+    Width = 80
+    OnChange = editBinerChange
+    TabOrder = 12
+  end
+  object editBrightness: TEdit
+    Left = 808
+    Height = 23
+    Top = 71
+    Width = 80
+    OnChange = editBrightnessChange
+    TabOrder = 13
+  end
+  object editContrast: TEdit
+    Left = 808
+    Height = 23
+    Top = 128
+    Width = 80
+    OnChange = editContrastChange
+    TabOrder = 14
+  end
+  object editG: TEdit
+    Left = 616
+    Height = 23
+    Top = 192
+    Width = 80
+    OnChange = editGChange
+    TabOrder = 15
   end
   object openDialog: TOpenDialog
     Left = 272
