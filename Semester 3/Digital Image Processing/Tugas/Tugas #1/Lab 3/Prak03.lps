@@ -9,7 +9,7 @@
         <Filename Value="Prak03.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <CursorPos Y="16"/>
+        <CursorPos X="140" Y="22"/>
         <UsageCount Value="24"/>
       </Unit0>
       <Unit1>
@@ -20,10 +20,11 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Utama"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="125"/>
-        <CursorPos X="61" Y="142"/>
+        <TopLine Value="128"/>
+        <CursorPos X="88" Y="73"/>
         <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="..\Lab 2\utama.pas"/>
@@ -36,9 +37,6 @@
         <UsageCount Value="10"/>
       </Unit2>
     </Units>
-    <General>
-      <ActiveWindowIndexAtStart Value="-1"/>
-    </General>
     <JumpHistory HistoryIndex="-1"/>
     <RunParams>
       <FormatVersion Value="2"/>

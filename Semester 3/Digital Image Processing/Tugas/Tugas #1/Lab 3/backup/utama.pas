@@ -223,7 +223,7 @@ procedure TFormUtama.btnSaveClick(Sender: TObject);
 begin
   if (saveDialog.Execute) then
   begin
-    imgOriginal.Picture.SaveToFile(saveDialog.FileName);
+    imgEdited.Picture.SaveToFile(saveDialog.FileName);
   end;
 end;
 
