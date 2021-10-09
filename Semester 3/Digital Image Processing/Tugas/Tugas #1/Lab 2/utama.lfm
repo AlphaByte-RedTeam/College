@@ -1,7 +1,7 @@
 object FormUtama: TFormUtama
-  Left = 699
+  Left = 975
   Height = 665
-  Top = 179
+  Top = 215
   Width = 934
   Caption = 'Jenis Citra Digital'
   ClientHeight = 665

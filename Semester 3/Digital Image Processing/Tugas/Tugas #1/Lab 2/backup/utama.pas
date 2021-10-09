@@ -130,14 +130,19 @@ begin
   begin
     for x:=0 to imgOriginal.Width-1 do
     begin
+      // Algoritma grayscale value
       gray := (bmpR[x, y] + bmpG[x, y] + bmpB[x, y]) div 3;
+      // Jika nilai grayscale <= posisi trackBar
       if (gray <= trackBar.Position) then
       begin
+        // Maka image akan di set menjadi black
         imgOriginal.Canvas.Pixels[x, y] := RGB(0, 0, 0);
       end
 
+      // Jikai nilai grayscal > posisi trackBar
       else
       begin
+        // Maka image akan di set menjadi white
         imgOriginal.Canvas.Pixels[x, y] := RGB(255, 255, 255);
       end;
     end;

@@ -139,7 +139,7 @@ begin
         imgOriginal.Canvas.Pixels[x, y] := RGB(0, 0, 0);
       end
 
-      // Jikai nilai grayscal > posisi trackBar
+      // Jika nilai grayscale > posisi trackBar
       else
       begin
         // Maka image akan di set menjadi white
