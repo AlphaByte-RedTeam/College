@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="2">
+    <Units Count="3">
       <Unit0>
         <Filename Value="Prak03.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -19,13 +19,21 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Utama"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="204"/>
-        <CursorPos X="89" Y="227"/>
+        <TopLine Value="125"/>
+        <CursorPos X="61" Y="142"/>
         <UsageCount Value="24"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
+      <Unit2>
+        <Filename Value="..\Lab 2\utama.pas"/>
+        <UnitName Value="Utama"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="139"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit2>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
