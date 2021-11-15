@@ -1,0 +1,115 @@
+object VisibleWatermark: TVisibleWatermark
+  Left = 811
+  Height = 741
+  Top = 174
+  Width = 1068
+  Caption = 'VisibleWatermark'
+  ClientHeight = 741
+  ClientWidth = 1068
+  LCLVersion = '2.0.12.0'
+  object btnLoadA: TButton
+    Left = 40
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Load A'
+    OnClick = btnLoadAClick
+    TabOrder = 0
+  end
+  object btnLoadB: TButton
+    Left = 40
+    Height = 25
+    Top = 72
+    Width = 75
+    Caption = 'Load B'
+    OnClick = btnLoadBClick
+    TabOrder = 1
+  end
+  object btnSave: TButton
+    Left = 164
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Save'
+    OnClick = btnSaveClick
+    TabOrder = 2
+  end
+  object btnBlend: TButton
+    Left = 288
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Blend'
+    OnClick = btnBlendClick
+    TabOrder = 3
+  end
+  object imgA: TImage
+    Left = 44
+    Height = 500
+    Top = 152
+    Width = 400
+    AutoSize = True
+  end
+  object imgBlend: TImage
+    Left = 488
+    Height = 100
+    Top = 152
+    Width = 100
+    AutoSize = True
+  end
+  object imgResult: TImage
+    Left = 623
+    Height = 500
+    Top = 154
+    Width = 400
+  end
+  object tBarParameter: TTrackBar
+    Left = 152
+    Height = 25
+    Top = 72
+    Width = 864
+    Max = 100
+    Position = 0
+    TabOrder = 4
+  end
+  object textParameter: TStaticText
+    Left = 160
+    Height = 17
+    Top = 104
+    Width = 65
+    Caption = 'Parameter'
+    TabOrder = 5
+  end
+  object textImageA: TStaticText
+    Left = 176
+    Height = 17
+    Top = 680
+    Width = 49
+    Caption = 'Image A'
+    TabOrder = 6
+  end
+  object textImageBlend: TStaticText
+    Left = 504
+    Height = 17
+    Top = 272
+    Width = 72
+    Caption = 'Image Blend'
+    TabOrder = 7
+  end
+  object textImageResult: TStaticText
+    Left = 792
+    Height = 17
+    Top = 681
+    Width = 72
+    Caption = 'Image Result'
+    TabOrder = 8
+  end
+  object OpenDialog: TOpenDialog
+    Left = 392
+    Top = 24
+  end
+  object SaveDialog: TSaveDialog
+    Left = 480
+    Top = 24
+  end
+end

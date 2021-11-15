@@ -1,0 +1,106 @@
+object operasiAritmatika: ToperasiAritmatika
+  Left = 942
+  Height = 746
+  Top = 186
+  Width = 928
+  Caption = 'operasiAritmatika'
+  ClientHeight = 746
+  ClientWidth = 928
+  LCLVersion = '2.0.12.0'
+  object btnLoadA: TButton
+    Left = 32
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Load A'
+    OnClick = btnLoadAClick
+    TabOrder = 0
+  end
+  object btnSave: TButton
+    Left = 145
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Save'
+    OnClick = btnSaveClick
+    TabOrder = 1
+  end
+  object btnPenjumlahan: TButton
+    Left = 265
+    Height = 25
+    Top = 24
+    Width = 99
+    Caption = 'Penjumlahan'
+    OnClick = btnPenjumlahanClick
+    TabOrder = 2
+  end
+  object btnAND: TButton
+    Left = 392
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'AND'
+    OnClick = btnANDClick
+    TabOrder = 3
+  end
+  object imgA: TImage
+    Left = 32
+    Height = 100
+    Top = 152
+    Width = 120
+    AutoSize = True
+  end
+  object imgB: TImage
+    Left = 240
+    Height = 100
+    Top = 152
+    Width = 120
+  end
+  object imgC: TImage
+    Left = 456
+    Height = 100
+    Top = 152
+    Width = 120
+  end
+  object bitmapA: TStaticText
+    Left = 64
+    Height = 17
+    Top = 272
+    Width = 49
+    Caption = 'bitmapA'
+    TabOrder = 4
+  end
+  object bitmapB: TStaticText
+    Left = 280
+    Height = 17
+    Top = 272
+    Width = 49
+    Caption = 'bitmapB'
+    TabOrder = 5
+  end
+  object bitmapC: TStaticText
+    Left = 496
+    Height = 17
+    Top = 272
+    Width = 49
+    Caption = 'bitmapC'
+    TabOrder = 6
+  end
+  object btnLoadB: TButton
+    Left = 32
+    Height = 25
+    Top = 72
+    Width = 75
+    Caption = 'Load B'
+    OnClick = btnLoadBClick
+    TabOrder = 7
+  end
+  object OpenDialog: TOpenDialog
+    Left = 502
+    Top = 24
+  end
+  object SaveDialog: TSaveDialog
+    Left = 568
+    Top = 24
+  end
+end
