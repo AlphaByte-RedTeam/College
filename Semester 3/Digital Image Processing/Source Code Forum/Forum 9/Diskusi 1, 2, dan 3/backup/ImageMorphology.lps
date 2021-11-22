@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="ImageMorphology.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="formutama.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormMorphology"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FormUtama"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="51"/>
+        <CursorPos X="62" Y="51"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+    </Units>
+    <JumpHistory Count="27" HistoryIndex="26">
+      <Position1>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="35" Column="26" TopLine="4"/>
+      </Position1>
+      <Position2>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="40"/>
+      </Position2>
+      <Position3>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="32" Column="21"/>
+      </Position3>
+      <Position4>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="46" Column="6" TopLine="4"/>
+      </Position4>
+      <Position5>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="47" Column="6" TopLine="4"/>
+      </Position5>
+      <Position6>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="48" Column="6" TopLine="4"/>
+      </Position6>
+      <Position7>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="70" Column="5" TopLine="26"/>
+      </Position7>
+      <Position8>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="79" Column="54" TopLine="35"/>
+      </Position8>
+      <Position9>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="78" Column="59" TopLine="35"/>
+      </Position9>
+      <Position10>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="81" Column="59" TopLine="38"/>
+      </Position10>
+      <Position11>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="103" Column="59" TopLine="76"/>
+      </Position11>
+      <Position12>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="39" Column="34" TopLine="17"/>
+      </Position12>
+      <Position13>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="49" Column="62" TopLine="37"/>
+      </Position13>
+      <Position14>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="50" Column="62" TopLine="38"/>
+      </Position14>
+      <Position15>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="49" Column="62" TopLine="37"/>
+      </Position15>
+      <Position16>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="51" Column="62" TopLine="39"/>
+      </Position16>
+      <Position17>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="50" Column="62" TopLine="77"/>
+      </Position17>
+      <Position18>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="52" Column="62" TopLine="52"/>
+      </Position18>
+      <Position19>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="51" Column="62" TopLine="51"/>
+      </Position19>
+      <Position20>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="52" Column="62" TopLine="52"/>
+      </Position20>
+      <Position21>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="54" Column="62" TopLine="54"/>
+      </Position21>
+      <Position22>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="53" Column="62" TopLine="53"/>
+      </Position22>
+      <Position23>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="54" Column="62" TopLine="54"/>
+      </Position23>
+      <Position24>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="104" Column="28" TopLine="40"/>
+      </Position24>
+      <Position25>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="64" Column="60" TopLine="49"/>
+      </Position25>
+      <Position26>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="80" Column="14" TopLine="58"/>
+      </Position26>
+      <Position27>
+        <Filename Value="formutama.pas"/>
+        <Caret Line="78" Column="38" TopLine="54"/>
+      </Position27>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

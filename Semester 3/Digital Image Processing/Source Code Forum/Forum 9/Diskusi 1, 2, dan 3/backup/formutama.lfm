@@ -1,0 +1,186 @@
+object FormMorphology: TFormMorphology
+  Left = 943
+  Height = 745
+  Top = 186
+  Width = 944
+  Caption = 'Morphology'
+  ClientHeight = 745
+  ClientWidth = 944
+  LCLVersion = '2.0.12.0'
+  object btnLoad: TButton
+    Left = 40
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Load'
+    OnClick = btnLoadClick
+    TabOrder = 0
+  end
+  object btnSave: TButton
+    Left = 154
+    Height = 25
+    Top = 25
+    Width = 75
+    Caption = 'Save'
+    OnClick = btnSaveClick
+    TabOrder = 1
+  end
+  object btnGray: TButton
+    Left = 269
+    Height = 25
+    Top = 25
+    Width = 75
+    Caption = 'Gray'
+    OnClick = btnGrayClick
+    TabOrder = 2
+  end
+  object btnBiner: TButton
+    Left = 384
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Biner'
+    OnClick = btnBinerClick
+    TabOrder = 3
+  end
+  object btnMorphAND: TButton
+    Left = 496
+    Height = 25
+    Top = 24
+    Width = 88
+    Caption = 'Morph AND'
+    TabOrder = 4
+  end
+  object imgOri: TImage
+    Left = 40
+    Height = 100
+    Top = 88
+    Width = 150
+    AutoSize = True
+  end
+  object imgGray: TImage
+    Left = 269
+    Height = 100
+    Top = 88
+    Width = 150
+    AutoSize = True
+  end
+  object imgBiner: TImage
+    Left = 40
+    Height = 100
+    Top = 304
+    Width = 150
+    AutoSize = True
+  end
+  object imgMorphAND: TImage
+    Left = 269
+    Height = 100
+    Top = 304
+    Width = 150
+    AutoSize = True
+  end
+  object tBarBiner: TTrackBar
+    Left = 456
+    Height = 25
+    Top = 96
+    Width = 384
+    Max = 255
+    Position = 127
+    TabOrder = 5
+  end
+  object btnMorphOR: TButton
+    Left = 624
+    Height = 25
+    Top = 25
+    Width = 75
+    Caption = 'Morph OR'
+    TabOrder = 6
+  end
+  object btnMorphAND3: TButton
+    Left = 744
+    Height = 25
+    Top = 24
+    Width = 96
+    Caption = 'Morph AND #3'
+    TabOrder = 7
+  end
+  object txtOriginal: TLabel
+    Left = 88
+    Height = 15
+    Top = 208
+    Width = 42
+    Caption = 'Original'
+    ParentColor = False
+  end
+  object txtGray: TLabel
+    Left = 326
+    Height = 15
+    Top = 208
+    Width = 38
+    Caption = 'txtGray'
+    ParentColor = False
+  end
+  object txtBiner: TLabel
+    Left = 96
+    Height = 15
+    Top = 426
+    Width = 27
+    Caption = 'Biner'
+    ParentColor = False
+  end
+  object imgMorphOR: TImage
+    Left = 40
+    Height = 100
+    Top = 496
+    Width = 150
+    AutoSize = True
+  end
+  object imgMorphAND3: TImage
+    Left = 269
+    Height = 100
+    Top = 496
+    Width = 150
+    AutoSize = True
+  end
+  object txtMorphOR: TLabel
+    Left = 88
+    Height = 15
+    Top = 614
+    Width = 55
+    Caption = 'Morph OR'
+    ParentColor = False
+  end
+  object txtMorphAND3: TLabel
+    Left = 305
+    Height = 15
+    Top = 614
+    Width = 80
+    Caption = 'Morph AND #3'
+    ParentColor = False
+  end
+  object editBiner: TEdit
+    Left = 856
+    Height = 23
+    Top = 96
+    Width = 80
+    OnChange = editBinerChange
+    TabOrder = 8
+    Text = '127'
+  end
+  object txtMorphAND: TLabel
+    Left = 312
+    Height = 15
+    Top = 426
+    Width = 64
+    Caption = 'Morph AND'
+    ParentColor = False
+  end
+  object openDialog: TOpenDialog
+    Left = 32
+    Top = 688
+  end
+  object saveDialog: TSaveDialog
+    Left = 112
+    Top = 688
+  end
+end
