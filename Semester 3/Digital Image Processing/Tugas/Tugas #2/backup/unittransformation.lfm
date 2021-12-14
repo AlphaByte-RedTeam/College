@@ -1,8 +1,167 @@
-object Form1: TForm1
+object formTransformation: TformTransformation
   Left = 939
   Height = 631
   Top = 184
   Width = 948
-  Caption = 'Form1'
+  Caption = 'Transformation'
+  ClientHeight = 631
+  ClientWidth = 948
   LCLVersion = '2.0.12.0'
+  object btnRotate: TButton
+    Left = 48
+    Height = 25
+    Top = 34
+    Width = 75
+    Caption = 'Rotate'
+    TabOrder = 0
+  end
+  object editX: TEdit
+    Left = 424
+    Height = 23
+    Hint = 'Enter X Value'
+    Top = 34
+    Width = 80
+    NumbersOnly = True
+    TabOrder = 1
+    Text = 'editX'
+  end
+  object btnLoad: TButton
+    Left = 48
+    Height = 25
+    Top = 98
+    Width = 75
+    Caption = 'Load'
+    OnClick = btnLoadClick
+    TabOrder = 2
+  end
+  object btnSave: TButton
+    Left = 160
+    Height = 25
+    Top = 98
+    Width = 75
+    Caption = 'Save'
+    TabOrder = 3
+  end
+  object btnMove: TButton
+    Left = 160
+    Height = 25
+    Top = 34
+    Width = 75
+    Caption = 'Move'
+    TabOrder = 4
+  end
+  object btnScale: TButton
+    Left = 280
+    Height = 25
+    Top = 32
+    Width = 75
+    Caption = 'Scale'
+    TabOrder = 5
+  end
+  object editY: TEdit
+    Left = 424
+    Height = 23
+    Hint = 'Enter Y Value'
+    Top = 100
+    Width = 80
+    NumbersOnly = True
+    TabOrder = 6
+    Text = 'editY'
+  end
+  object txtXVal: TLabel
+    Left = 528
+    Height = 30
+    Top = 29
+    Width = 68
+    Caption = 'X Value'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -21
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object txtYVal: TLabel
+    Left = 528
+    Height = 30
+    Top = 96
+    Width = 68
+    Caption = 'Y Value'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -21
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object imgSrc: TImage
+    Left = 48
+    Height = 250
+    Top = 176
+    Width = 250
+  end
+  object imgMod: TImage
+    Left = 456
+    Height = 250
+    Top = 176
+    Width = 250
+  end
+  object txtImgOri: TLabel
+    Left = 88
+    Height = 32
+    Top = 456
+    Width = 157
+    Caption = 'Original Image'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -24
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object txtImgMod: TLabel
+    Left = 504
+    Height = 32
+    Top = 456
+    Width = 170
+    Caption = 'Modified Image'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -24
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object txtNote: TLabel
+    Left = 24
+    Height = 24
+    Top = 584
+    Width = 190
+    Caption = 'Max WxH is 250x250'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -19
+    Font.Name = 'Microsoft JhengHei'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object openDialog: TOpenDialog
+    Left = 688
+    Top = 40
+  end
+  object saveDialog: TSaveDialog
+    Left = 768
+    Top = 40
+  end
 end

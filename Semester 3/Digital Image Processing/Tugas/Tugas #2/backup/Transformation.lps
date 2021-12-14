@@ -15,18 +15,69 @@
         <UsageCount Value="20"/>
       </Unit0>
       <Unit1>
-        <Filename Value="unit1.pas"/>
+        <Filename Value="unittransformation.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="Form1"/>
+        <ComponentName Value="formTransformation"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UnitTransformation"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="44" Y="11"/>
+        <CursorPos X="30" Y="18"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="12" HistoryIndex="11">
+      <Position1>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="13" Column="15"/>
+      </Position1>
+      <Position2>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="17" Column="15"/>
+      </Position2>
+      <Position3>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="18" Column="15"/>
+      </Position3>
+      <Position4>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="19" Column="15"/>
+      </Position4>
+      <Position5>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="20" Column="15"/>
+      </Position5>
+      <Position6>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="19" Column="15"/>
+      </Position6>
+      <Position7>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="20" Column="15"/>
+      </Position7>
+      <Position8>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="22" Column="15"/>
+      </Position8>
+      <Position9>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="21" Column="15"/>
+      </Position9>
+      <Position10>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="22" Column="15" TopLine="4"/>
+      </Position10>
+      <Position11>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="21" Column="15" TopLine="4"/>
+      </Position11>
+      <Position12>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="17" Column="32"/>
+      </Position12>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes Count="0" ActiveMode=""/>
