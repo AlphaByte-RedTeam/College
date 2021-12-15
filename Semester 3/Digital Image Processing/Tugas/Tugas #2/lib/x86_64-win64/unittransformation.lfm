@@ -8,22 +8,22 @@ object formTransformation: TformTransformation
   ClientWidth = 948
   LCLVersion = '2.0.12.0'
   object btnRotate: TButton
-    Left = 48
+    Left = 160
     Height = 25
-    Top = 34
+    Top = 32
     Width = 75
     Caption = 'Rotate'
     TabOrder = 0
   end
-  object X: TEdit
+  object editX: TEdit
     Left = 424
     Height = 23
-    Hint = 'Enter X Value'
     Top = 34
     Width = 80
     NumbersOnly = True
+    OnChange = editXChange
     TabOrder = 1
-    Text = 'X'
+    TextHint = 'Enter X Value'
   end
   object btnLoad: TButton
     Left = 48
@@ -31,6 +31,7 @@ object formTransformation: TformTransformation
     Top = 98
     Width = 75
     Caption = 'Load'
+    OnClick = btnLoadClick
     TabOrder = 2
   end
   object btnSave: TButton
@@ -39,14 +40,16 @@ object formTransformation: TformTransformation
     Top = 98
     Width = 75
     Caption = 'Save'
+    OnClick = btnSaveClick
     TabOrder = 3
   end
   object btnMove: TButton
-    Left = 160
+    Left = 48
     Height = 25
     Top = 34
     Width = 75
     Caption = 'Move'
+    OnClick = btnMoveClick
     TabOrder = 4
   end
   object btnScale: TButton
@@ -57,15 +60,15 @@ object formTransformation: TformTransformation
     Caption = 'Scale'
     TabOrder = 5
   end
-  object Y: TEdit
+  object editY: TEdit
     Left = 424
     Height = 23
-    Hint = 'Enter Y Value'
     Top = 100
     Width = 80
     NumbersOnly = True
+    OnChange = editYChange
     TabOrder = 6
-    Text = 'Y'
+    TextHint = 'Enter Y Value'
   end
   object txtXVal: TLabel
     Left = 528

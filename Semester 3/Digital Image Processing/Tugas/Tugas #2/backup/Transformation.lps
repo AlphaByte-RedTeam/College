@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="2">
+    <Units Count="3">
       <Unit0>
         <Filename Value="Transformation.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -12,7 +12,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
       </Unit0>
       <Unit1>
         <Filename Value="unittransformation.pas"/>
@@ -22,13 +22,22 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="UnitTransformation"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="30" Y="18"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="60"/>
+        <CursorPos X="28" Y="93"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
+      <Unit2>
+        <Filename Value="C:\lazarus\fpc\3.2.0\source\rtl\objpas\sysutils\sysstrh.inc"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="104"/>
+        <CursorPos X="10" Y="123"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit2>
     </Units>
-    <JumpHistory Count="12" HistoryIndex="11">
+    <JumpHistory Count="22" HistoryIndex="21">
       <Position1>
         <Filename Value="unittransformation.pas"/>
         <Caret Line="13" Column="15"/>
@@ -77,6 +86,46 @@
         <Filename Value="unittransformation.pas"/>
         <Caret Line="17" Column="32"/>
       </Position12>
+      <Position13>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="18" Column="30"/>
+      </Position13>
+      <Position14>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="19" Column="30"/>
+      </Position14>
+      <Position15>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="20" Column="30"/>
+      </Position15>
+      <Position16>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="21" Column="30"/>
+      </Position16>
+      <Position17>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="23" Column="44"/>
+      </Position17>
+      <Position18>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="21" Column="58" TopLine="2"/>
+      </Position18>
+      <Position19>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="22" Column="58" TopLine="2"/>
+      </Position19>
+      <Position20>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="18" Column="51" TopLine="24"/>
+      </Position20>
+      <Position21>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="53" Column="56" TopLine="27"/>
+      </Position21>
+      <Position22>
+        <Filename Value="unittransformation.pas"/>
+        <Caret Line="93" Column="25" TopLine="60"/>
+      </Position22>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

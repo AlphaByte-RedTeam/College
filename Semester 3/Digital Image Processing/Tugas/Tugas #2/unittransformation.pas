@@ -29,7 +29,10 @@ type
     openDialog: TOpenDialog;
     saveDialog: TSaveDialog;
     procedure btnLoadClick(Sender: TObject);
+    procedure btnMoveClick(Sender: TObject);
     procedure btnSaveClick(Sender: TObject);
+    procedure editXChange(Sender: TObject);
+    procedure editYChange(Sender: TObject);
   private
 
   public
@@ -45,6 +48,11 @@ implementation
 
 { TformTransformation }
 
+uses Windows;
+
+var
+  bmpR, bmpG, bmpB : array[0..10000, 0..10000] of byte;
+
 procedure TformTransformation.btnLoadClick(Sender: TObject);
 var
   x, y: integer;
@@ -54,7 +62,7 @@ begin
     imgSrc.Picture.LoadFromFile(openDialog.FileName);
     for y:=0 to imgSrc.Height-1 do
     begin
-      for x:=0 to imgSrc.Widht-1 do
+      for x:=0 to imgSrc.Width-1 do
       begin
         bmpR[x,y] := getRValue(imgSrc.Canvas.Pixels[x,y]);
         bmpG[x,y] := getGValue(imgSrc.Canvas.Pixels[x,y]);
@@ -62,6 +70,13 @@ begin
       end;
     end;
   end;
+end;
+
+procedure TformTransformation.btnMoveClick(Sender: TObject);
+var
+  x, y: integer;
+begin
+
 end;
 
 procedure TformTransformation.btnSaveClick(Sender: TObject);
@@ -72,6 +87,20 @@ begin
   begin
     imgMod.Picture.SaveToFile(saveDialog.FileName);
   end;
+end;
+
+procedure TformTransformation.editXChange(Sender: TObject);
+var
+  Sx: double;
+begin
+  Sx := StrToFloat(editX.text);
+end;
+
+procedure TformTransformation.editYChange(Sender: TObject);
+var
+  Sy: double;
+begin
+  Sy := StrToFloat(editY.text);
 end;
 
 end.
