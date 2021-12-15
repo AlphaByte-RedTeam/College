@@ -63,12 +63,12 @@ object formTransformation: TformTransformation
   object editY: TEdit
     Left = 424
     Height = 23
-    Hint = 'Enter Y Value'
     Top = 100
     Width = 80
     NumbersOnly = True
     OnChange = editYChange
     TabOrder = 6
+    TextHint = 'Enter Y Value'
   end
   object txtXVal: TLabel
     Left = 528

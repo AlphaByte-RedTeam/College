@@ -52,6 +52,7 @@ uses Windows;
 
 var
   bmpR, bmpG, bmpB : array[0..10000, 0..10000] of byte;
+  Sx, Sy : double;
 
 procedure TformTransformation.btnLoadClick(Sender: TObject);
 var
@@ -90,15 +91,11 @@ begin
 end;
 
 procedure TformTransformation.editXChange(Sender: TObject);
-var
-  Sx: double;
 begin
   Sx := StrToFloat(editX.text);
 end;
 
 procedure TformTransformation.editYChange(Sender: TObject);
-var
-  Sy: double;
 begin
   Sy := StrToFloat(editY.text);
 end;
