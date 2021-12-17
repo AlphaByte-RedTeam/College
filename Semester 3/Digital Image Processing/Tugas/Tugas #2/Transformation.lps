@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="2">
+    <Units Count="3">
       <Unit0>
         <Filename Value="Transformation.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -12,7 +12,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
       </Unit0>
       <Unit1>
         <Filename Value="transformationproject.pas"/>
@@ -22,17 +22,56 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="TransformationProject"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="3"/>
-        <CursorPos Y="39"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="4"/>
+        <CursorPos X="13" Y="9"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
+      <Unit2>
+        <Filename Value="C:\lazarus\fpc\3.2.0\source\rtl\inc\objpash.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="187"/>
+        <CursorPos X="23" Y="206"/>
+        <UsageCount Value="10"/>
+      </Unit2>
     </Units>
-    <JumpHistory Count="1">
+    <JumpHistory Count="9" HistoryIndex="8">
       <Position1>
         <Filename Value="transformationproject.pas"/>
       </Position1>
+      <Position2>
+        <Filename Value="transformationproject.pas"/>
+        <Caret Line="38" Column="16" TopLine="10"/>
+      </Position2>
+      <Position3>
+        <Filename Value="transformationproject.pas"/>
+        <Caret Line="39" Column="22" TopLine="10"/>
+      </Position3>
+      <Position4>
+        <Filename Value="transformationproject.pas"/>
+        <Caret Line="47" Column="48" TopLine="19"/>
+      </Position4>
+      <Position5>
+        <Filename Value="transformationproject.pas"/>
+        <Caret Line="43" Column="14" TopLine="24"/>
+      </Position5>
+      <Position6>
+        <Filename Value="transformationproject.pas"/>
+        <Caret Line="36" Column="11" TopLine="20"/>
+      </Position6>
+      <Position7>
+        <Filename Value="transformationproject.pas"/>
+        <Caret Line="9" Column="30" TopLine="22"/>
+      </Position7>
+      <Position8>
+        <Filename Value="transformationproject.pas"/>
+        <Caret Line="8" Column="31" TopLine="13"/>
+      </Position8>
+      <Position9>
+        <Filename Value="transformationproject.pas"/>
+        <Caret Line="56" Column="26" TopLine="25"/>
+      </Position9>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

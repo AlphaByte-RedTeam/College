@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="2">
+    <Units Count="3">
       <Unit0>
         <Filename Value="Transformation.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -17,16 +17,42 @@
       <Unit1>
         <Filename Value="transformationproject.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="Form1"/>
+        <ComponentName Value="tranformationForm"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="TransformationProject"/>
         <IsVisibleTab Value="True"/>
+        <TopLine Value="27"/>
+        <CursorPos X="7" Y="55"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
+      <Unit2>
+        <Filename Value="C:\lazarus\fpc\3.2.0\source\rtl\inc\objpash.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="187"/>
+        <CursorPos X="23" Y="206"/>
+        <UsageCount Value="10"/>
+      </Unit2>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="4" HistoryIndex="3">
+      <Position1>
+        <Filename Value="transformationproject.pas"/>
+      </Position1>
+      <Position2>
+        <Filename Value="transformationproject.pas"/>
+        <Caret Line="38" Column="16" TopLine="10"/>
+      </Position2>
+      <Position3>
+        <Filename Value="transformationproject.pas"/>
+        <Caret Line="39" Column="22" TopLine="10"/>
+      </Position3>
+      <Position4>
+        <Filename Value="transformationproject.pas"/>
+        <Caret Line="47" Column="48" TopLine="19"/>
+      </Position4>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes Count="0" ActiveMode=""/>

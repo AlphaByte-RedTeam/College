@@ -4,14 +4,15 @@ object tranformationForm: TtranformationForm
   Top = 179
   Width = 714
   Caption = 'Transformation'
-  ClientHeight = 640
-  ClientWidth = 714
+  ClientHeight = 0
+  ClientWidth = 0
   LCLVersion = '2.0.12.0'
   object imgOriginal: TPaintBox
     Left = 24
     Height = 529
     Top = 80
     Width = 457
+    OnPaint = imgOriginalPaint
   end
   object btnLoad: TButton
     Left = 560

@@ -39,7 +39,8 @@
       <Unit1>
         <Filename Value="transformationproject.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="Form1"/>
+        <ComponentName Value="tranformationForm"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="TransformationProject"/>
       </Unit1>
