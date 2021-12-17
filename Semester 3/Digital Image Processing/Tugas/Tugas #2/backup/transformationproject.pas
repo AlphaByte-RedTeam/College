@@ -20,6 +20,7 @@ type
     TrackBar1: TTrackBar;
     TrackBar2: TTrackBar;
     TrackBar3: TTrackBar;
+    procedure checkBoxChange(Sender: TObject);
   private
 
   public

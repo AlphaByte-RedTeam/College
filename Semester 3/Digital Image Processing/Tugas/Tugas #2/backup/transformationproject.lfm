@@ -52,6 +52,7 @@ object tranformationForm: TtranformationForm
     Width = 91
     Caption = 'Center Check'
     Checked = True
+    OnChange = checkBoxChange
     State = cbChecked
     TabOrder = 4
   end
