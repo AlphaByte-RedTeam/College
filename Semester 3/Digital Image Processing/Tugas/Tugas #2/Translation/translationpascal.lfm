@@ -1,8 +1,0 @@
-object Form1: TForm1
-  Left = 940
-  Height = 626
-  Top = 189
-  Width = 600
-  Caption = 'Translation'
-  LCLVersion = '2.0.12.0'
-end
