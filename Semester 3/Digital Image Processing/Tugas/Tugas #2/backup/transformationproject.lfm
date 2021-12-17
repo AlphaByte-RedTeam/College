@@ -1,10 +1,10 @@
 object tranformationForm: TtranformationForm
-  Left = 942
-  Height = 632
-  Top = 186
+  Left = 962
+  Height = 640
+  Top = 179
   Width = 714
   Caption = 'Transformation'
-  ClientHeight = 632
+  ClientHeight = 640
   ClientWidth = 714
   LCLVersion = '2.0.12.0'
   object imgOriginal: TPaintBox
@@ -19,9 +19,10 @@ object tranformationForm: TtranformationForm
     Top = 72
     Width = 75
     Caption = 'Load'
+    OnClick = btnLoadClick
     TabOrder = 0
   end
-  object TrackBar1: TTrackBar
+  object tBarZoom: TTrackBar
     Left = 544
     Height = 25
     Top = 208
@@ -29,7 +30,7 @@ object tranformationForm: TtranformationForm
     Position = 0
     TabOrder = 1
   end
-  object TrackBar2: TTrackBar
+  object tBarX: TTrackBar
     Left = 544
     Height = 25
     Top = 328
@@ -37,7 +38,7 @@ object tranformationForm: TtranformationForm
     Position = 0
     TabOrder = 2
   end
-  object TrackBar3: TTrackBar
+  object tBarY: TTrackBar
     Left = 544
     Height = 25
     Top = 440
@@ -45,14 +46,14 @@ object tranformationForm: TtranformationForm
     Position = 0
     TabOrder = 3
   end
-  object checkBox: TCheckBox
+  object checkCenter: TCheckBox
     Left = 544
     Height = 19
     Top = 552
     Width = 91
     Caption = 'Center Check'
     Checked = True
-    OnChange = checkBoxChange
+    OnChange = checkCenterChange
     State = cbChecked
     TabOrder = 4
   end

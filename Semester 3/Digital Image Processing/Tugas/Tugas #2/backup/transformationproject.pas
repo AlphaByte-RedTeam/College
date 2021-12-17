@@ -14,13 +14,14 @@ type
 
   TtranformationForm = class(TForm)
     btnLoad: TButton;
-    checkBox: TCheckBox;
+    checkCenter: TCheckBox;
     imgOriginal: TPaintBox;
     openDialog: TOpenDialog;
-    TrackBar1: TTrackBar;
-    TrackBar2: TTrackBar;
-    TrackBar3: TTrackBar;
-    procedure checkBoxChange(Sender: TObject);
+    tBarZoom: TTrackBar;
+    tBarX: TTrackBar;
+    tBarY: TTrackBar;
+    procedure btnLoadClick(Sender: TObject);
+    procedure checkCenterChange(Sender: TObject);
   private
 
   public
@@ -34,7 +35,19 @@ implementation
 
 {$R *.lfm}
 
+// var
+  // LoadedImage: TPicutre = nil;
+
 { TtranformationForm }
+
+procedure TtranformationForm.btnLoadClick(Sender: TObject);
+begin
+end;
+
+procedure TtranformationForm.checkCenterChange(Sender: TObject);
+begin
+  imgOriginal.Invalidate;
+end;
 
 end.
 
