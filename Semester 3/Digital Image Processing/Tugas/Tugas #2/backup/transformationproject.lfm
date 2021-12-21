@@ -30,6 +30,7 @@ object tranformationForm: TtranformationForm
     Width = 100
     Max = 150
     Min = 50
+    OnChange = tBarZoomChange
     PageSize = 10
     Position = 100
     TabOrder = 1

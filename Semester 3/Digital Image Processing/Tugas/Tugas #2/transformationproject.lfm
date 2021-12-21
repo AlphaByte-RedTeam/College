@@ -1,7 +1,7 @@
 object tranformationForm: TtranformationForm
-  Left = 962
+  Left = 345
   Height = 578
-  Top = 179
+  Top = 210
   Width = 662
   Caption = 'Transformation'
   ClientHeight = 578
