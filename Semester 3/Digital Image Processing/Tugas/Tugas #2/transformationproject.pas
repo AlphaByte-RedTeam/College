@@ -26,6 +26,9 @@ type
     procedure btnLoadClick(Sender: TObject);
     procedure checkCenterChange(Sender: TObject);
     procedure imgOriginalPaint(Sender: TObject);
+    procedure tBarXChange(Sender: TObject);
+    procedure tBarYChange(Sender: TObject);
+    procedure tBarZoomChange(Sender: TObject);
   private
 
   public
@@ -104,6 +107,21 @@ begin
        Line(x, 0, x, height);
        Line(0, y, width, y);
      end;
+end;
+
+procedure TtranformationForm.tBarXChange(Sender: TObject);
+begin
+  imgOriginal.Invalidate;
+end;
+
+procedure TtranformationForm.tBarYChange(Sender: TObject);
+begin
+  imgOriginal.Invalidate;
+end;
+
+procedure TtranformationForm.tBarZoomChange(Sender: TObject);
+begin
+  imgOriginal.Invalidate;
 end;
 
 end.

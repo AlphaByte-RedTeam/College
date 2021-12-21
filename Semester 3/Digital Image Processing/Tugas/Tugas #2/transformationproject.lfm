@@ -30,6 +30,7 @@ object tranformationForm: TtranformationForm
     Width = 100
     Max = 150
     Min = 50
+    OnChange = tBarZoomChange
     Position = 100
     TabOrder = 1
   end
@@ -40,6 +41,7 @@ object tranformationForm: TtranformationForm
     Width = 100
     Max = 150
     Min = 50
+    OnChange = tBarXChange
     Position = 100
     TabOrder = 2
   end
@@ -50,6 +52,7 @@ object tranformationForm: TtranformationForm
     Width = 100
     Max = 150
     Min = 50
+    OnChange = tBarYChange
     Position = 100
     TabOrder = 3
   end

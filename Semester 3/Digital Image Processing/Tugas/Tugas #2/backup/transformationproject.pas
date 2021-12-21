@@ -26,6 +26,9 @@ type
     procedure btnLoadClick(Sender: TObject);
     procedure checkCenterChange(Sender: TObject);
     procedure imgOriginalPaint(Sender: TObject);
+    procedure tBarXChange(Sender: TObject);
+    procedure tBarYChange(Sender: TObject);
+    procedure tBarZoomChange(Sender: TObject);
   private
 
   public
@@ -53,8 +56,8 @@ begin
   if (loadedImg = nil) then loadedImg := TPicture.Create;
   loadedImg.LoadFromFile(openDialog.FileName);
   tBarZoom.Position := 100;
-  tBarX.Position := 0;
-  tBarY.Position := 0;
+  tBarX.Position := 100;
+  tBarY.Position := 100;
   imgOriginal.Invalidate;
 end;
 
@@ -104,6 +107,21 @@ begin
        Line(x, 0, x, height);
        Line(0, y, width, y);
      end;
+end;
+
+procedure TtranformationForm.tBarXChange(Sender: TObject);
+begin
+  imgOriginal.Invalidate;
+end;
+
+procedure TtranformationForm.tBarYChange(Sender: TObject);
+begin
+  imgOriginal.Invalidate;
+end;
+
+procedure TtranformationForm.tBarZoomChange(Sender: TObject);
+begin
+  imgOriginal.Invalidate;
 end;
 
 end.

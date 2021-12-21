@@ -28,7 +28,10 @@ object tranformationForm: TtranformationForm
     Height = 25
     Top = 143
     Width = 100
-    Position = 0
+    Max = 150
+    Min = 50
+    OnChange = tBarZoomChange
+    Position = 100
     TabOrder = 1
   end
   object tBarX: TTrackBar
@@ -36,7 +39,10 @@ object tranformationForm: TtranformationForm
     Height = 25
     Top = 264
     Width = 100
-    Position = 0
+    Max = 150
+    Min = 50
+    OnChange = tBarXChange
+    Position = 100
     TabOrder = 2
   end
   object tBarY: TTrackBar
@@ -44,7 +50,10 @@ object tranformationForm: TtranformationForm
     Height = 25
     Top = 376
     Width = 100
-    Position = 0
+    Max = 150
+    Min = 50
+    OnChange = tBarYChange
+    Position = 100
     TabOrder = 3
   end
   object checkCenter: TCheckBox
