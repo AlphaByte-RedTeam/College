@@ -2,10 +2,15 @@ object tranformationForm: TtranformationForm
   Left = 962
   Height = 578
   Top = 179
-  Width = 662
+  Width = 714
   Caption = 'Transformation'
+<<<<<<< HEAD
   ClientHeight = 578
   ClientWidth = 662
+=======
+  ClientHeight = 0
+  ClientWidth = 0
+>>>>>>> parent of 88a363f (update: design interface)
   LCLVersion = '2.0.12.0'
   object imgOriginal: TPaintBox
     Left = 24
@@ -76,6 +81,7 @@ object tranformationForm: TtranformationForm
     State = cbChecked
     TabOrder = 4
   end
+<<<<<<< HEAD
   object lblZoom: TLabel
     Left = 552
     Height = 22
@@ -121,6 +127,8 @@ object tranformationForm: TtranformationForm
     ParentColor = False
     ParentFont = False
   end
+=======
+>>>>>>> parent of 88a363f (update: design interface)
   object openDialog: TOpenDialog
     Left = 520
     Top = 496
