@@ -16,6 +16,9 @@ type
     btnLoad: TButton;
     checkCenter: TCheckBox;
     imgOriginal: TPaintBox;
+    lblYBar: TLabel;
+    lblXBar: TLabel;
+    lblZoom: TLabel;
     openDialog: TOpenDialog;
     tBarZoom: TTrackBar;
     tBarX: TTrackBar;
