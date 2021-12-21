@@ -31,6 +31,7 @@ object tranformationForm: TtranformationForm
     Max = 150
     Min = 50
     OnChange = tBarZoomChange
+    PageSize = 10
     Position = 100
     TabOrder = 1
   end
@@ -39,10 +40,11 @@ object tranformationForm: TtranformationForm
     Height = 25
     Top = 264
     Width = 100
-    Max = 150
-    Min = 50
+    Max = 50
+    Min = -50
     OnChange = tBarXChange
-    Position = 100
+    PageSize = 10
+    Position = 0
     TabOrder = 2
   end
   object tBarY: TTrackBar
@@ -50,10 +52,11 @@ object tranformationForm: TtranformationForm
     Height = 25
     Top = 376
     Width = 100
-    Max = 150
-    Min = 50
+    Max = 50
+    Min = -50
     OnChange = tBarYChange
-    Position = 100
+    PageSize = 10
+    Position = 0
     TabOrder = 3
   end
   object checkCenter: TCheckBox

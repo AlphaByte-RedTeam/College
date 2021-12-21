@@ -56,8 +56,8 @@ begin
   if (loadedImg = nil) then loadedImg := TPicture.Create;
   loadedImg.LoadFromFile(openDialog.FileName);
   tBarZoom.Position := 100;
-  tBarX.Position := 100;
-  tBarY.Position := 100;
+  tBarX.Position := 0;
+  tBarY.Position := 0;
   imgOriginal.Invalidate;
 end;
 
