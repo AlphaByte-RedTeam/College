@@ -10,7 +10,7 @@ Transformation geometry for Digital Image Processing assignment made from Pascal
 
 Note: You can download the sample picture [here](https://drive.google.com/drive/u/1/folders/1mcWhldX0ZgtWEfEaZJ7ZcBulp0OG28LV) </br>
 
-![spiderman](https://imgur.com/a/hdpLpcP)
+![spiderman](./spiderman.jpeg)
 
 2. Slide the track bar position into whatever you like </br>
 
