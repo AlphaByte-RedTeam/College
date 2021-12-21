@@ -6,6 +6,7 @@ object tranformationForm: TtranformationForm
   Caption = 'Transformation'
   ClientHeight = 578
   ClientWidth = 662
+  Position = poDefault
   LCLVersion = '2.0.12.0'
   object imgOriginal: TPaintBox
     Left = 24
@@ -29,7 +30,7 @@ object tranformationForm: TtranformationForm
     Top = 143
     Width = 100
     Max = 150
-    Min = 10
+    Min = 50
     Position = 100
     TabOrder = 1
   end
@@ -39,7 +40,7 @@ object tranformationForm: TtranformationForm
     Top = 264
     Width = 100
     Max = 150
-    Min = 10
+    Min = 50
     Position = 100
     TabOrder = 2
   end
@@ -49,7 +50,7 @@ object tranformationForm: TtranformationForm
     Top = 376
     Width = 100
     Max = 150
-    Min = 10
+    Min = 50
     Position = 100
     TabOrder = 3
   end
