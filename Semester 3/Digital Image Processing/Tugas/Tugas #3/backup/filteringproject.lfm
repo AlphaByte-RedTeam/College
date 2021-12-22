@@ -32,7 +32,7 @@ object FilteringForm: TFilteringForm
     TabOrder = 2
   end
   object radioGroupFilter: TRadioGroup
-    Left = 376
+    Left = 288
     Height = 105
     Top = 32
     Width = 185
@@ -56,7 +56,7 @@ object FilteringForm: TFilteringForm
     TabOrder = 3
   end
   object radioGroupColor: TRadioGroup
-    Left = 592
+    Left = 504
     Height = 105
     Top = 32
     Width = 185
@@ -90,5 +90,13 @@ object FilteringForm: TFilteringForm
     Top = 224
     Width = 90
     AutoSize = True
+  end
+  object btnConvolution: TButton
+    Left = 160
+    Height = 25
+    Top = 88
+    Width = 75
+    Caption = 'Convolution'
+    TabOrder = 5
   end
 end
