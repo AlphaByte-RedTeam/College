@@ -15,6 +15,8 @@ type
     btnLoad: TButton;
     btnSave: TButton;
     btnProcess: TButton;
+    imgOriginal: TImage;
+    imgMod: TImage;
     radioGroupColor: TRadioGroup;
     radioGroupFilter: TRadioGroup;
   private
