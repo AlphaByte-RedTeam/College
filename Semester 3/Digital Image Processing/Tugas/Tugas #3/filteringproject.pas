@@ -15,6 +15,7 @@ type
     btnLoad: TButton;
     btnSave: TButton;
     btnCorrelation: TButton;
+    btnConvolution: TButton;
     imgOriginal: TImage;
     imgMod: TImage;
     radioGroupColor: TRadioGroup;

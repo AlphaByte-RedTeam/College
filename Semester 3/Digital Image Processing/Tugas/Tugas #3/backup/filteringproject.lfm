@@ -1,9 +1,9 @@
-object Form1: TForm1
+object FilteringForm: TFilteringForm
   Left = 943
   Height = 622
   Top = 189
   Width = 903
-  Caption = 'Form1'
+  Caption = 'FilteringForm'
   ClientHeight = 622
   ClientWidth = 903
   LCLVersion = '2.0.12.0'
