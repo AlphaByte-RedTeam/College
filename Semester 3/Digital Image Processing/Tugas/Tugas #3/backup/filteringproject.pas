@@ -5,10 +5,16 @@ unit FilteringProject;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
 
 type
+
+  { TForm1 }
+
   TForm1 = class(TForm)
+    btnLoad: TButton;
+    btnSave: TButton;
+    btnProcess: TButton;
   private
 
   public

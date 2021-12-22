@@ -5,7 +5,7 @@ unit FilteringProject;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls;
 
 type
 
@@ -15,6 +15,8 @@ type
     btnLoad: TButton;
     btnSave: TButton;
     btnProcess: TButton;
+    radioGroupColor: TRadioGroup;
+    radioGroupFilter: TRadioGroup;
   private
 
   public

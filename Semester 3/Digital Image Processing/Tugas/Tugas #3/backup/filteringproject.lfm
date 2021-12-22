@@ -4,5 +4,31 @@ object Form1: TForm1
   Top = 189
   Width = 903
   Caption = 'Form1'
+  ClientHeight = 622
+  ClientWidth = 903
   LCLVersion = '2.0.12.0'
+  object btnLoad: TButton
+    Left = 52
+    Height = 25
+    Top = 30
+    Width = 75
+    Caption = 'Load'
+    TabOrder = 0
+  end
+  object btnSave: TButton
+    Left = 160
+    Height = 25
+    Top = 30
+    Width = 75
+    Caption = 'Save'
+    TabOrder = 1
+  end
+  object btnProcess: TButton
+    Left = 264
+    Height = 25
+    Top = 30
+    Width = 75
+    Caption = 'Process'
+    TabOrder = 2
+  end
 end
