@@ -14,7 +14,7 @@ type
   TForm1 = class(TForm)
     btnLoad: TButton;
     btnSave: TButton;
-    btnProcess: TButton;
+    btnCorrelation: TButton;
     imgOriginal: TImage;
     imgMod: TImage;
     radioGroupColor: TRadioGroup;

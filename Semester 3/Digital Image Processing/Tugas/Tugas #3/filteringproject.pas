@@ -9,9 +9,9 @@ uses
 
 type
 
-  { TForm1 }
+  { TFilteringForm }
 
-  TForm1 = class(TForm)
+  TFilteringForm = class(TForm)
     btnLoad: TButton;
     btnSave: TButton;
     btnCorrelation: TButton;
@@ -26,7 +26,7 @@ type
   end;
 
 var
-  Form1: TForm1;
+  FilteringForm: TFilteringForm;
 
 implementation
 

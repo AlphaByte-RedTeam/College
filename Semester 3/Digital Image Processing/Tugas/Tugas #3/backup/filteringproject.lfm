@@ -23,12 +23,12 @@ object Form1: TForm1
     Caption = 'Save'
     TabOrder = 1
   end
-  object btnProcess: TButton
-    Left = 264
+  object btnCorrelation: TButton
+    Left = 52
     Height = 25
-    Top = 30
+    Top = 88
     Width = 75
-    Caption = 'Process'
+    Caption = 'Correlation'
     TabOrder = 2
   end
   object radioGroupFilter: TRadioGroup
