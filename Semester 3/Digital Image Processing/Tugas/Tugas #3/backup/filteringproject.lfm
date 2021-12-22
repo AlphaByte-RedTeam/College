@@ -72,6 +72,7 @@ object FilteringForm: TFilteringForm
     ChildSizing.ControlsPerLine = 1
     ClientHeight = 85
     ClientWidth = 181
+    ItemIndex = 0
     Items.Strings = (
       'Color'
       'Grayscale'

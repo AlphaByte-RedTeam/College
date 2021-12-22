@@ -22,6 +22,7 @@ object FilteringForm: TFilteringForm
     Top = 30
     Width = 75
     Caption = 'Save'
+    OnClick = btnSaveClick
     TabOrder = 1
   end
   object btnCorrelation: TButton

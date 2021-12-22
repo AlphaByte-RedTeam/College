@@ -25,6 +25,7 @@ type
     radioGroupFilter: TRadioGroup;
     saveDialog: TSaveDialog;
     procedure btnLoadClick(Sender: TObject);
+    procedure btnSaveClick(Sender: TObject);
   private
 
   public
@@ -71,6 +72,12 @@ begin
       end;
     end;
   end;
+end;
+
+procedure TFilteringForm.btnSaveClick(Sender: TObject);
+begin
+  if saveDialog.Execute then
+     imgMod.Picture.SaveToFile(saveDialog.FileName);
 end;
 
 end.
