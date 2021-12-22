@@ -13,6 +13,7 @@ object FilteringForm: TFilteringForm
     Top = 30
     Width = 75
     Caption = 'Load'
+    OnClick = btnLoadClick
     TabOrder = 0
   end
   object btnSave: TButton
@@ -71,6 +72,7 @@ object FilteringForm: TFilteringForm
     ChildSizing.ControlsPerLine = 1
     ClientHeight = 85
     ClientWidth = 181
+    ItemIndex = 0
     Items.Strings = (
       'Color'
       'Grayscale'

@@ -17,16 +17,47 @@
       <Unit1>
         <Filename Value="filteringproject.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="Form1"/>
+        <ComponentName Value="FilteringForm"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="FilteringProject"/>
         <IsVisibleTab Value="True"/>
+        <TopLine Value="12"/>
+        <CursorPos X="54" Y="49"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="7" HistoryIndex="6">
+      <Position1>
+        <Filename Value="filteringproject.pas"/>
+      </Position1>
+      <Position2>
+        <Filename Value="filteringproject.pas"/>
+        <Caret Line="22" Column="61"/>
+      </Position2>
+      <Position3>
+        <Filename Value="filteringproject.pas"/>
+        <Caret Line="23" Column="61"/>
+      </Position3>
+      <Position4>
+        <Filename Value="filteringproject.pas"/>
+        <Caret Line="24" Column="61"/>
+      </Position4>
+      <Position5>
+        <Filename Value="filteringproject.pas"/>
+        <Caret Line="25" Column="61"/>
+      </Position5>
+      <Position6>
+        <Filename Value="filteringproject.pas"/>
+        <Caret Line="26" Column="61"/>
+      </Position6>
+      <Position7>
+        <Filename Value="filteringproject.pas"/>
+        <Caret Line="28" Column="61"/>
+      </Position7>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes Count="0" ActiveMode=""/>
