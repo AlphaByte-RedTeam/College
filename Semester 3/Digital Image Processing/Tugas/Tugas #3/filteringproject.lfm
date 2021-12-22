@@ -131,4 +131,12 @@ object FilteringForm: TFilteringForm
     ParentColor = False
     ParentFont = False
   end
+  object openDialog: TOpenDialog
+    Left = 752
+    Top = 35
+  end
+  object saveDialog: TSaveDialog
+    Left = 840
+    Top = 35
+  end
 end

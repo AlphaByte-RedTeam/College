@@ -18,6 +18,8 @@ type
     btnConvolution: TButton;
     imgOriginal: TImage;
     imgMod: TImage;
+    lblImageMod: TLabel;
+    lblImageOri: TLabel;
     radioGroupColor: TRadioGroup;
     radioGroupFilter: TRadioGroup;
   private

@@ -20,8 +20,10 @@ type
     imgMod: TImage;
     lblImageMod: TLabel;
     lblImageOri: TLabel;
+    openDialog: TOpenDialog;
     radioGroupColor: TRadioGroup;
     radioGroupFilter: TRadioGroup;
+    saveDialog: TSaveDialog;
   private
 
   public

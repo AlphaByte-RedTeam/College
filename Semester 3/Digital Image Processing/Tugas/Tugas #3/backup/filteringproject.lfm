@@ -99,4 +99,36 @@ object FilteringForm: TFilteringForm
     Caption = 'Convolution'
     TabOrder = 5
   end
+  object lblImageOri: TLabel
+    Left = 96
+    Height = 21
+    Top = 189
+    Width = 107
+    Caption = 'Original Image'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object lblImageMod: TLabel
+    Left = 584
+    Height = 21
+    Top = 192
+    Width = 118
+    Caption = 'Modified Image'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
 end
