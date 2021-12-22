@@ -77,17 +77,18 @@ object Form1: TForm1
     )
     TabOrder = 4
   end
-  object Image1: TImage
-    Left = 56
+  object imgOriginal: TImage
+    Left = 64
     Height = 90
-    Top = 216
+    Top = 224
     Width = 90
     AutoSize = True
   end
-  object Image2: TImage
-    Left = 552
+  object imgMod: TImage
+    Left = 560
     Height = 90
-    Top = 216
+    Top = 224
     Width = 90
+    AutoSize = True
   end
 end
