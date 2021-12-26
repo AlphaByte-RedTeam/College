@@ -52,9 +52,13 @@ var
 function TFilteringForm.constrain(val: integer): byte;
 begin
   if val < 0 then
+  begin
      constrain := 0;
+  end
   else if val > 255 then
+  begin
      constrain := 255;
+  end
   else
       constrain := val;
 end;

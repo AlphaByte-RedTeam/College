@@ -24,6 +24,7 @@ type
     radioFilterMode: TRadioGroup;
     radioColorMode: TRadioGroup;
     saveDialog: TSaveDialog;
+    procedure btnLoadClick(Sender: TObject);
   private
     function constrain(val: integer): byte;
 
@@ -48,6 +49,30 @@ var
   k, kHalf: integer;
 
 { TFilteringForm }
+
+procedure TFilteringForm.btnLoadClick(Sender: TObject);
+var
+  x, y: integer;
+begin
+  if openDialog.Execute then
+  begin
+     imgOri.Picture.LoadFromFile(openDialog.FileName);
+     __initHeight__ := imgOri.Height;
+     __initWidth__ := imgOri.Width;
+
+     for y:=0 to imgOri.Height-1 do
+     begin
+       for x:=0 to imgOri.Width-1 do
+       begin
+         bmpR[x,y] := Red(imgOri.Canvas.Pixels[x,y]);
+         bmpG[x,y] := Green(imgOri.Canvas.Pixels[x,y]);
+         bmpB[x,y] := Blue(imgOri.Canvas.Pixels[x,y]);
+
+         bmpGray[x,y] := (bmpR[x,y] + bmpG[x,y] + bmpB[x,y]) div 3;
+       end;
+     end;
+  end;
+end;
 
 function TFilteringForm.constrain(val: integer): byte;
 begin

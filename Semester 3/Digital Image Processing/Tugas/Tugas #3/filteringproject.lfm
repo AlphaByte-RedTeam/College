@@ -13,6 +13,7 @@ object FilteringForm: TFilteringForm
     Top = 24
     Width = 75
     Caption = 'Load'
+    OnClick = btnLoadClick
     TabOrder = 0
   end
   object btnSave: TButton
