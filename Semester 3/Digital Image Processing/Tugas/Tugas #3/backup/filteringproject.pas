@@ -179,13 +179,86 @@ begin
 end;
 
 procedure TFilteringForm.initKernel();
+var
+  x, y: integer;
 begin
+  if radioFilterMode.ItemIndex = 2 then
+  begin
+     for y:=1 to k do
+     begin
+       for x:=1 to k do
+       begin
+         kernelSize[x,y] := 1 / (k*k);
+       end;
+     end;
+  end
 
+  else
+  begin
+    for y:=1 to k do
+    begin
+      for x:=1 to k do
+      begin
+        kernelSize[x,y] := -1;
+      end;
+    end;
+    if radioFilterMode.ItemIndex = 1 then
+    begin
+       kernelSize[kHalf,kHalf] := (k*k);
+    end
+    else if radioFilterMode.ItemIndex = 0 then
+    begin
+       kernelSize[kHalf,kHalf] := (k*k) - 1;
+    end;
+  end;
 end;
 
 procedure TFilteringForm.padBitmap();
+var
+  x, y, z: integer;
 begin
+  if radioColorMode.ItemIndex = 1 then
+  begin
+     for y:=0 to __initHeight__+kHalf do
+     begin
+       for z:=0 to kHalf-1 do
+       begin
+         padR[0+z, y] := 255;
+         padR[__initWidth__+kHalf+z, y] := 255;
 
+         padG[0+z, y] := 255;
+         padG[__initWidth__+kHalf+z, y] := 255;
+
+         padB[0+z, y] := 255;
+         padB[__initWidth__+kHalf+z, y] := 255;
+       end;
+     end;
+
+     for x:=0 to __initWidth__+kHalf do
+     begin
+       for z:=0 to kHalf-1 do
+       begin
+         padR[x, 0+z] := 255;
+         padG[x, __initWidth__+kHalf+z] := 255;
+
+         padG[x, 0+z] := 255;
+         padG[x, __initWidth__+kHalf+z] := 255;
+
+         padB[x, 0+z] := 255;
+         padB[x, __initWidth__+kHalf+z] := 255;
+       end;
+     end;
+
+     for y:=kHalf to (__initHeight__+kHalf-1) do
+     begin
+       for x:=kHalf to (__initWidth__+kHalf-1) do
+       begin
+         padR[x,y] := bmpR[x-kHalf, y-kHalf];
+         padG[x,y] := bmpG[x-kHalf, y-kHalf];
+         padB[x,y] := bmpB[x-kHalf, y-kHalf];
+       end;
+     end;
+  end;
 end;
 
 end.
