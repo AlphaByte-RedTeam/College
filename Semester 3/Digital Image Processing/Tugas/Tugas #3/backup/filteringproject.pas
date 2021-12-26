@@ -14,10 +14,10 @@ type
   TFilteringForm = class(TForm)
     editKernel: TEdit;
     kernelSize: TLabel;
-    Load: TButton;
-    Save: TButton;
-    Correlation: TButton;
-    Convolution: TButton;
+    btnLoad: TButton;
+    btnSave: TButton;
+    btnCorrelation: TButton;
+    btnConvolution: TButton;
     imgOri: TImage;
     imgMod: TImage;
     openDialog: TOpenDialog;

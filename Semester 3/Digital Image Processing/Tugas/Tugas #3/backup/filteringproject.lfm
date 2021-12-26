@@ -7,36 +7,36 @@ object FilteringForm: TFilteringForm
   ClientHeight = 629
   ClientWidth = 948
   LCLVersion = '2.0.12.0'
-  object Load: TButton
+  object btnLoad: TButton
     Left = 40
     Height = 25
     Top = 24
     Width = 75
-    Caption = 'Load'
+    Caption = 'btnLoad'
     TabOrder = 0
   end
-  object Save: TButton
+  object btnSave: TButton
     Left = 152
     Height = 25
     Top = 24
     Width = 75
-    Caption = 'Save'
+    Caption = 'btnSave'
     TabOrder = 1
   end
-  object Correlation: TButton
+  object btnCorrelation: TButton
     Left = 40
     Height = 25
     Top = 72
     Width = 75
-    Caption = 'Correlation'
+    Caption = 'btnCorrelation'
     TabOrder = 2
   end
-  object Convolution: TButton
+  object btnConvolution: TButton
     Left = 152
     Height = 25
     Top = 72
     Width = 75
-    Caption = 'Convolution'
+    Caption = 'btnConvolution'
     TabOrder = 3
   end
   object radioFilterMode: TRadioGroup

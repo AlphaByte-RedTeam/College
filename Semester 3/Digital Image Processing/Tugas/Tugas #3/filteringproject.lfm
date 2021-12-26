@@ -12,7 +12,7 @@ object FilteringForm: TFilteringForm
     Height = 25
     Top = 24
     Width = 75
-    Caption = 'btnLoad'
+    Caption = 'Load'
     TabOrder = 0
   end
   object btnSave: TButton
@@ -20,7 +20,7 @@ object FilteringForm: TFilteringForm
     Height = 25
     Top = 24
     Width = 75
-    Caption = 'btnSave'
+    Caption = 'Save'
     TabOrder = 1
   end
   object btnCorrelation: TButton
@@ -28,7 +28,7 @@ object FilteringForm: TFilteringForm
     Height = 25
     Top = 72
     Width = 75
-    Caption = 'btnCorrelation'
+    Caption = 'Correlation'
     TabOrder = 2
   end
   object btnConvolution: TButton
@@ -36,7 +36,7 @@ object FilteringForm: TFilteringForm
     Height = 25
     Top = 72
     Width = 75
-    Caption = 'btnConvolution'
+    Caption = 'Convolution'
     TabOrder = 3
   end
   object radioFilterMode: TRadioGroup
