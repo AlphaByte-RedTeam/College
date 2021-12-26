@@ -5,10 +5,25 @@ unit FilteringProject;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls;
 
 type
-  TForm1 = class(TForm)
+
+  { TFilteringForm }
+
+  TFilteringForm = class(TForm)
+    editKernel: TEdit;
+    kernelSize: TLabel;
+    Load: TButton;
+    Save: TButton;
+    Correlation: TButton;
+    Convolution: TButton;
+    imgOri: TImage;
+    imgMod: TImage;
+    openDialog: TOpenDialog;
+    radioFilterMode: TRadioGroup;
+    radioColorMode: TRadioGroup;
+    saveDialog: TSaveDialog;
   private
 
   public
@@ -16,7 +31,7 @@ type
   end;
 
 var
-  Form1: TForm1;
+  FilteringForm: TFilteringForm;
 
 implementation
 

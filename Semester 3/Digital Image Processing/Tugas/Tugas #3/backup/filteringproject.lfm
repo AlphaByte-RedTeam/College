@@ -1,8 +1,133 @@
-object Form1: TForm1
+object FilteringForm: TFilteringForm
   Left = 942
   Height = 629
   Top = 185
   Width = 948
-  Caption = 'Form1'
+  Caption = 'Filtering'
+  ClientHeight = 629
+  ClientWidth = 948
   LCLVersion = '2.0.12.0'
+  object Load: TButton
+    Left = 40
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Load'
+    TabOrder = 0
+  end
+  object Save: TButton
+    Left = 152
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Save'
+    TabOrder = 1
+  end
+  object Correlation: TButton
+    Left = 40
+    Height = 25
+    Top = 72
+    Width = 75
+    Caption = 'Correlation'
+    TabOrder = 2
+  end
+  object Convolution: TButton
+    Left = 152
+    Height = 25
+    Top = 72
+    Width = 75
+    Caption = 'Convolution'
+    TabOrder = 3
+  end
+  object radioFilterMode: TRadioGroup
+    Left = 264
+    Height = 105
+    Top = 22
+    Width = 185
+    AutoFill = True
+    Caption = 'Select Filter Mode'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 85
+    ClientWidth = 181
+    ItemIndex = 0
+    Items.Strings = (
+      'HPF - 0'
+      'HPF - 1'
+      'LPF'
+    )
+    TabOrder = 4
+  end
+  object radioColorMode: TRadioGroup
+    Left = 528
+    Height = 105
+    Top = 22
+    Width = 185
+    AutoFill = True
+    Caption = 'Select Color Mode'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 85
+    ClientWidth = 181
+    ItemIndex = 0
+    Items.Strings = (
+      'Colorful'
+      'Grayscale'
+    )
+    TabOrder = 5
+  end
+  object imgOri: TImage
+    Left = 48
+    Height = 90
+    Top = 216
+    Width = 90
+  end
+  object imgMod: TImage
+    Left = 496
+    Height = 90
+    Top = 216
+    Width = 90
+  end
+  object editKernel: TEdit
+    Left = 144
+    Height = 23
+    Top = 125
+    Width = 93
+    TabOrder = 6
+    TextHint = 'Input size here'
+  end
+  object kernelSize: TLabel
+    Left = 47
+    Height = 20
+    Top = 125
+    Width = 75
+    Caption = 'Kernel Size'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -15
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object openDialog: TOpenDialog
+    Left = 784
+    Top = 24
+  end
+  object saveDialog: TSaveDialog
+    Left = 864
+    Top = 24
+  end
 end
