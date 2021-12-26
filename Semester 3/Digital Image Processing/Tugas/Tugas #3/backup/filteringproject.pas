@@ -106,9 +106,12 @@ begin
          begin
            for xK:=1 to k do
            begin
-             cR := cR + (padR[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
-             cG := cG + (padG[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
-             cB := cB + (padB[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
+             // cR := cR + (padR[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
+             cR:= cR + (padR[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
+             // cG := cG + (padG[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
+             cG:= cG + (padG[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
+             // cB := cB + (padB[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
+             cB:= cB + (padB[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
            end;
          end;
 
@@ -256,6 +259,34 @@ begin
          padR[x,y] := bmpR[x-kHalf, y-kHalf];
          padG[x,y] := bmpG[x-kHalf, y-kHalf];
          padB[x,y] := bmpB[x-kHalf, y-kHalf];
+       end;
+     end;
+  end
+  else if radioColorMode.ItemIndex=0 then
+  begin
+     for y:=0 to __initHeight__+kHalf do
+     begin
+       for z:=0 to kHalf-1 do
+       begin
+         padGray[0+z, y] := 255;
+         padGray[__initWidth__+kHalf+z, y] := 255;
+       end;
+     end;
+
+     for x:=0 to __initWidth__+kHalf do
+     begin
+       for z:=0 to kHalf-1 do
+       begin
+         padGray[x, 0+z] := 255;
+         padGray[x, __initHeight__+kHalf+z] := 255;
+       end;
+     end;
+
+     for y:=kHalf to (__initHeight__+kHalf-1) do
+     begin
+       for x:=kHalf to (__initWidth__+kHalf-1) do
+       begin
+         padGray[x,y] := bmpGray[x-kHalf, y-kHalf];
        end;
      end;
   end;
