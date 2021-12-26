@@ -195,6 +195,49 @@ begin
              cB := cB + (padB[x - (xK - k + kHalf), y - (yK - k + kHalf)] * kernelSize[xK, yK]);
            end;
          end;
+
+         cBR[x - kHalf, y - kHalf] := constrain(Round(cR));
+         cBG[x - kHalf, y - kHalf] := constrain(Round(cG));
+         cBB[x - kHalf, y - kHalf] := constrain(Round(cB));
+       end;
+     end;
+
+     for y:= 0 to __initHeight__-1 do
+     begin
+       for x:=0 to __initWidth__-1 do
+       begin
+         imgMod.Canvas.Pixels[x,y] := RGB(cBR[x,y], cBG[x,y], cBB[x,y]);
+       end;
+     end;
+  end
+
+  else if radioColorMode.ItemIndex = 0 then
+  begin
+     for y:=kHalf to (__initHeight__+kHalf) do
+     begin
+       for x:=kHalf to (__initWidth__+kHalf) do
+       begin
+         cGray := 0;
+         for yK:=1 to k do
+         begin
+           for xK:=1 to k do
+           begin
+             cGray := cGray + (padGray[x - (xK - k + kHalf), y - (yK - k + kHalf)] * kernelSize[xK, yK]);
+           end;
+         end;
+
+         cBGray[x - kHalf, y - kHalf] := constrain(Round(cGray));
+       end;
+     end;
+
+     for y:=0 to __initHeight__-1 do
+     begin
+       for x:= to __initWidth__-1 do
+       begin
+         imgMod.Canvas.Pixels[x,y] := RGB(cBGray[x,y], cBGray[x,y], cBGray[x,y]);
+
+         if radioFilterMode.ItemIndex <> 2 then
+            imgSketch.Canvas.Pixels[x,y] := RGB(255 - cBGray[x,y], 255 - cBGray[x,y], 255 - cBGray[x,y]);
        end;
      end;
   end;

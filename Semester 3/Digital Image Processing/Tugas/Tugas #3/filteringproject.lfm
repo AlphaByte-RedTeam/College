@@ -4,8 +4,8 @@ object FilteringForm: TFilteringForm
   Top = 185
   Width = 948
   Caption = 'Filtering'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 629
+  ClientWidth = 948
   LCLVersion = '2.0.12.0'
   object btnLoad: TButton
     Left = 40
@@ -95,12 +95,14 @@ object FilteringForm: TFilteringForm
     Height = 90
     Top = 216
     Width = 90
+    AutoSize = True
   end
   object imgMod: TImage
     Left = 424
     Height = 90
     Top = 216
     Width = 90
+    AutoSize = True
   end
   object editKernel: TEdit
     Left = 144
@@ -131,6 +133,7 @@ object FilteringForm: TFilteringForm
     Height = 90
     Top = 216
     Width = 90
+    AutoSize = True
   end
   object openDialog: TOpenDialog
     Left = 784
