@@ -31,6 +31,7 @@ object FilteringForm: TFilteringForm
     Top = 72
     Width = 75
     Caption = 'Correlation'
+    OnClick = btnCorrelationClick
     TabOrder = 2
   end
   object btnConvolution: TButton
@@ -95,7 +96,7 @@ object FilteringForm: TFilteringForm
     Width = 90
   end
   object imgMod: TImage
-    Left = 496
+    Left = 424
     Height = 90
     Top = 216
     Width = 90
@@ -123,6 +124,12 @@ object FilteringForm: TFilteringForm
     Font.Style = [fsBold]
     ParentColor = False
     ParentFont = False
+  end
+  object imgSketch: TImage
+    Left = 760
+    Height = 90
+    Top = 216
+    Width = 90
   end
   object openDialog: TOpenDialog
     Left = 784

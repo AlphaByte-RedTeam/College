@@ -13,6 +13,7 @@ type
 
   TFilteringForm = class(TForm)
     editKernel: TEdit;
+    imgSketch: TImage;
     kernelSize: TLabel;
     btnLoad: TButton;
     btnSave: TButton;
@@ -24,9 +25,13 @@ type
     radioFilterMode: TRadioGroup;
     radioColorMode: TRadioGroup;
     saveDialog: TSaveDialog;
+    procedure btnCorrelationClick(Sender: TObject);
     procedure btnLoadClick(Sender: TObject);
+    procedure btnSaveClick(Sender: TObject);
   private
     function constrain(val: integer): byte;
+    procedure initKernel();
+    procedure padBitmap();
 
   public
 
@@ -44,7 +49,7 @@ uses Windows;
 var
   bmpR, bmpG, bmpB, bmpGray: array[0..1000, 0..1000] of byte;
   padR, padG, padB, padGray: array[0..1000, 0..1000] of double;
-  kernel: array[0..100, 0..100] of double;
+  kernelSize: array[0..100, 0..100] of double;
   __initWidth__, __initHeight__: integer;
   k, kHalf: integer;
 
@@ -74,6 +79,91 @@ begin
   end;
 end;
 
+procedure TFilteringForm.btnCorrelationClick(Sender: TObject);
+var
+  x, y, xK, yK: integer;
+  cBR, cBG, cBB, cBGray: array[0..1000, 0..1000] of integer;
+  cR, cG, cB, cGray: double;
+begin
+  imgMod.Width := __initWidth__;
+  imgMod.Height := __initHeight__;
+  k := StrToInt(editKernel.Text);
+  kHalf := k div 2;
+  initKernel();
+  padBitmap();
+
+  if radioColorMode.ItemIndex = 1 then
+  begin
+     for y:=kHalf to (__initHeight__ + kHalf) do
+     begin
+       for x:=kHalf to (__initWidth__ + kHalf) do
+       begin
+         cR := 0;
+         cG := 0;
+         cB := 0;
+
+         for yK:=1 to k do
+         begin
+           for xK:=1 to k do
+           begin
+             cR := cR + (padR[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
+             cG := cG + (padG[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
+             cB := cB + (padB[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
+           end;
+         end;
+
+         cBR[x - kHalf, y - kHalf] := constrain(Round(cR));
+         cBG[x - kHalf, y - kHalf] := constrain(Round(cG]);
+         cBB[x - kHalf, y - kHalf] := constrain(Round(cB));
+       end;
+     end;
+
+     for y:=0 to __initHeight__-1 do
+     begin
+       for x:=0 to __initWidth__-1 do
+       begin
+         imgMod.Canvas.Pixels[x,y] := RGB(cBR[x,y], cBG[x,y], cBB[x,y]);
+       end;
+     end;
+  end
+  else if radioColorMode.ItemIndex = 0 then
+  begin
+     for y:=kHalf to (__initHeight__+kHalf) do
+     begin
+       for x:=kHalf to (__initWidth__+kHalf) do
+       begin
+         cGray := 0;
+         for yK:=1 to k do
+         begin
+           for xK:=1 to k do
+           begin
+             cGray := cGray + (padGray[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
+           end;
+         end;
+
+         cBGray[x - kHalf, y - kHalf] := constrain(Round(cGray));
+       end;
+     end;
+
+     for y:=0 to __initHeight__-1 do
+     begin
+       for x:=0 to __initWidth__-1 do
+       begin
+         imgMod.Canvas.Pixels[x,y] := RGB(cBGray[x,y], cBGray[x,y], cBGray[x,y]);
+
+         if radioFilterMode.ItemIndex <> 2 then
+            imgSketch.Canvas.Pixels[x,y] := RGB(255-cBGray[x,y], 255-cBGray[x,y], 255-cBGray[x,y]);
+       end;
+     end;
+  end;
+end;
+
+procedure TFilteringForm.btnSaveClick(Sender: TObject);
+begin
+  if saveDialog.Execute then
+     imgMod.Picture.SaveToFile(saveDialog.FileName);
+end;
+
 function TFilteringForm.constrain(val: integer): byte;
 begin
   if val < 0 then
@@ -86,6 +176,16 @@ begin
   end
   else
       constrain := val;
+end;
+
+procedure TFilteringForm.initKernel();
+begin
+
+end;
+
+procedure TFilteringForm.padBitmap();
+begin
+
 end;
 
 end.
