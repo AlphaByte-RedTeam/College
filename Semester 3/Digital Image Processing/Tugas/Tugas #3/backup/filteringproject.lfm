@@ -4,8 +4,8 @@ object FilteringForm: TFilteringForm
   Top = 185
   Width = 948
   Caption = 'Filtering'
-  ClientHeight = 629
-  ClientWidth = 948
+  ClientHeight = 0
+  ClientWidth = 0
   LCLVersion = '2.0.12.0'
   object btnLoad: TButton
     Left = 40
@@ -40,6 +40,7 @@ object FilteringForm: TFilteringForm
     Top = 72
     Width = 75
     Caption = 'Convolution'
+    OnClick = btnConvolutionClick
     TabOrder = 3
   end
   object radioFilterMode: TRadioGroup

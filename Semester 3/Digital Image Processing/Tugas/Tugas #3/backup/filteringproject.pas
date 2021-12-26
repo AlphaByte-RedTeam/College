@@ -25,6 +25,7 @@ type
     radioFilterMode: TRadioGroup;
     radioColorMode: TRadioGroup;
     saveDialog: TSaveDialog;
+    procedure btnConvolutionClick(Sender: TObject);
     procedure btnCorrelationClick(Sender: TObject);
     procedure btnLoadClick(Sender: TObject);
     procedure btnSaveClick(Sender: TObject);
@@ -106,12 +107,9 @@ begin
          begin
            for xK:=1 to k do
            begin
-             // cR := cR + (padR[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
-             cR:= cR + (padR[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
-             // cG := cG + (padG[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
-             cG:= cG + (padG[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
-             // cB := cB + (padB[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
-             cB:= cB + (padB[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
+             cR := cR + (padR[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
+             cG := cG + (padG[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
+             cB := cB + (padB[x + (xK - k + kHalf), y + (yK - k + kHalf)] * kernelSize[xK, yK]);
            end;
          end;
 
@@ -156,6 +154,47 @@ begin
 
          if radioFilterMode.ItemIndex <> 2 then
             imgSketch.Canvas.Pixels[x,y] := RGB(255-cBGray[x,y], 255-cBGray[x,y], 255-cBGray[x,y]);
+       end;
+     end;
+  end;
+end;
+
+procedure TFilteringForm.btnConvolutionClick(Sender: TObject);
+var
+  x, y, xK, yK: integer;
+  cBR, cBG, cBB, cBGray: array[0..1000, 0..1000] of integer;
+  cR, cG, cB, cGray: double;
+begin
+  imgMod.Height := __initHeight__;
+  imgMod.Width := __initWidth__;
+
+  imgSketch.Height := __initHeight__;
+  imgSketch.Width := __initWidth__;
+
+  k := StrToInt(editKernel.Text);
+  kHalf := k div 2;
+  initKernel();
+  padBitmap();
+
+  if radioColorMode.ItemIndex = 1 then
+  begin
+     for y:=kHalf to (__initHeight__+kHalf) do
+     begin
+       for x:=kHalf to (__initWidth__+kHalf) do
+       begin
+         cR := 0;
+         cG := 0;
+         cB := 0;
+
+         for yK:=1 to k do
+         begin
+           for xK:=1 to k do
+           begin
+             cR := cR + (padR[x - (xK - k + kHalf), y - (yK - k + kHalf)] * kernelSize[xK, yK]);
+             cG := cG + (padG[x - (xK - k + kHalf), y - (yK - k + kHalf)] * kernelSize[xK, yK]);
+             cB := cB + (padB[x - (xK - k + kHalf), y - (yK - k + kHalf)] * kernelSize[xK, yK]);
+           end;
+         end;
        end;
      end;
   end;
