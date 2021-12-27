@@ -59,7 +59,7 @@ object formArithmetic: TformArithmetic
     Left = 32
     Height = 80
     Top = 88
-    Width = 185
+    Width = 105
     AutoFill = True
     Caption = 'Select Load'
     ChildSizing.LeftRightSpacing = 6
@@ -70,7 +70,7 @@ object formArithmetic: TformArithmetic
     ChildSizing.Layout = cclLeftToRightThenTopToBottom
     ChildSizing.ControlsPerLine = 1
     ClientHeight = 60
-    ClientWidth = 181
+    ClientWidth = 101
     ItemIndex = 0
     Items.Strings = (
       'Image A'

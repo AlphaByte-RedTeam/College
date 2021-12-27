@@ -113,7 +113,7 @@ begin
     for x:=0 to imgA.Width-1 do
     begin
       resGray[x,y] := Round((bmpGray[x,y] + bmpGray2[x,y]) / 2);
-      imgMod.Canvas.Pixels[x,y] := RGB(bmpR[x,y], bmpG[x,y], bmpB[x,y]);
+      imgMod.Canvas.Pixels[x,y] := RGB(resGray[x,y], resGray[x,y], resGray[x,y]);
     end;
   end;
 end;
