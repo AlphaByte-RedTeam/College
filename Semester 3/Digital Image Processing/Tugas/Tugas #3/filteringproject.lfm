@@ -1,5 +1,5 @@
 object FilteringForm: TFilteringForm
-  Left = 883
+  Left = 900
   Height = 629
   Top = 185
   Width = 1007

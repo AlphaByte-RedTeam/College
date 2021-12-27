@@ -1,14 +1,14 @@
 object FilteringForm: TFilteringForm
-  Left = 942
+  Left = 883
   Height = 629
   Top = 185
-  Width = 948
+  Width = 1007
   HorzScrollBar.Page = 850
   VertScrollBar.Page = 306
   AutoScroll = True
   Caption = 'Filtering'
   ClientHeight = 629
-  ClientWidth = 948
+  ClientWidth = 1007
   LCLVersion = '2.0.12.0'
   object btnLoad: TButton
     Left = 40
