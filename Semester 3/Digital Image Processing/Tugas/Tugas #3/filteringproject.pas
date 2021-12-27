@@ -29,6 +29,7 @@ type
     procedure btnCorrelationClick(Sender: TObject);
     procedure btnLoadClick(Sender: TObject);
     procedure btnSaveClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     function constrain(val: integer): byte;
     procedure initKernel();
@@ -247,6 +248,11 @@ procedure TFilteringForm.btnSaveClick(Sender: TObject);
 begin
   if saveDialog.Execute then
      imgMod.Picture.SaveToFile(saveDialog.FileName);
+end;
+
+procedure TFilteringForm.FormCreate(Sender: TObject);
+begin
+
 end;
 
 function TFilteringForm.constrain(val: integer): byte;

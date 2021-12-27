@@ -22,14 +22,14 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="FilteringProject"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="155"/>
-        <CursorPos X="49" Y="168"/>
+        <TopLine Value="253"/>
+        <CursorPos X="3" Y="255"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
     </Units>
-    <JumpHistory Count="13" HistoryIndex="12">
+    <JumpHistory Count="14" HistoryIndex="13">
       <Position1>
         <Filename Value="filteringproject.pas"/>
         <Caret Line="21" Column="53"/>
@@ -82,6 +82,10 @@
         <Filename Value="filteringproject.pas"/>
         <Caret Line="357" Column="33" TopLine="299"/>
       </Position13>
+      <Position14>
+        <Filename Value="filteringproject.pas"/>
+        <Caret Line="169" Column="49" TopLine="156"/>
+      </Position14>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

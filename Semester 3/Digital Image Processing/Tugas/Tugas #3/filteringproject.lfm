@@ -3,12 +3,13 @@ object FilteringForm: TFilteringForm
   Height = 629
   Top = 188
   Width = 1071
-  HorzScrollBar.Page = 850
+  HorzScrollBar.Page = 818
   VertScrollBar.Page = 306
   AutoScroll = True
   Caption = 'Filtering'
   ClientHeight = 629
   ClientWidth = 1071
+  OnCreate = FormCreate
   LCLVersion = '2.0.12.0'
   object btnLoad: TButton
     Left = 40
@@ -101,7 +102,7 @@ object FilteringForm: TFilteringForm
     AutoSize = True
   end
   object imgMod: TImage
-    Left = 424
+    Left = 400
     Height = 90
     Top = 216
     Width = 90
@@ -132,7 +133,7 @@ object FilteringForm: TFilteringForm
     ParentFont = False
   end
   object imgSketch: TImage
-    Left = 760
+    Left = 728
     Height = 90
     Top = 216
     Width = 90
