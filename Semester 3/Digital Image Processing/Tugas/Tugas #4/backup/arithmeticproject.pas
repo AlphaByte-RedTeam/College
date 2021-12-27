@@ -43,12 +43,13 @@ uses
   windows, math;
 
 var
-  bmpR, bmpG, bmpB: array[0..1000, 0..1000] of byte;
-  resR, resG, resB: array[0..1000, 0..1000] of byte;
+  bmpR, bmpG, bmpB, bmpGray, bmpBinary: array[0..1000, 0..1000] of byte;
+  bmpR2, bmpG2, bmpB2, bmpGray2, bmpBinary2: array[0..1000, 0..1000] of byte;
+  resR, resG, resB, resGray: array[0..1000, 0..1000] of byte;
 
 procedure TformArithmetic.btnLoadClick(Sender: TObject);
 var
-  x, y: integer;
+  x, y, R, G, B, Gray: integer;
 begin
   if radioLoad.ItemIndex = 0 then
   begin
@@ -59,9 +60,19 @@ begin
       begin
         for x:=0 to imgA.Width-1 do
         begin
-          bmpR[x,y] := Red(imgA.Canvas.Pixels[x,y]);
-          bmpG[x,y] := Green(imgA.Canvas.Pixels[x,y]);
-          bmpB[x,y] := Blue(imgA.Canvas.Pixels[x,y]);
+          R := GetRValue(imgA.Canvas.Pixels[x,y]);
+          G := GetGValue(imgA.Canvas.Pixels[x,y]);
+          B := GetBValue(imgA.Canvas.Pixels[x,y]);
+          Gray := (R + G + B) div 3;
+          bmpR[x,y] := R;
+          bmpG[x,y] := G;
+          bmpB[x,y] := B;
+          bmpGray[x,y] := Gray;
+
+          if Gray > 127 then
+             bmpBinary[x,y] := 1
+          else
+            bmpBinary[x,y] := 0;
         end;
       end;
     end;
@@ -75,9 +86,18 @@ begin
       begin
         for x:=0 to imgB.Width-1 do
         begin
-          bmpR[x,y] := Red(imgB.Canvas.Pixels[x,y]);
-          bmpG[x,y] := Green(imgB.Canvas.Pixels[x,y]);
-          bmpB[x,y] := Blue(imgB.Canvas.Pixels[x,y]);
+          R := GetRValue(imgB.Canvas.Pixels[x,y]);
+          G := GetGValue(imgB.Canvas.Pixels[x,y]);
+          B := GetBValue(imgB.Canvas.Pixels[x,y]);
+          Gray := (R + G + B) div 3;
+          bmpR2[x,y] := R;
+          bmpG2[x,y] := G;
+          bmpB2[x,y] := B;
+          bmpGray2[x,y] := Gray;
+          if Gray > 127 then
+             bmpBinary2[x,y] := 1
+          else
+            bmpBinary2[x,y] := 0;
         end;
       end;
     end;
@@ -86,15 +106,14 @@ end;
 
 procedure TformArithmetic.btnProcessClick(Sender: TObject);
 var
-  bR, bG, bB: integer;
-  temp: double;
-  x, y, R, G, B: integer;
+  x, y: integer;
 begin
   for y:=0 to imgA.Height-1 do
   begin
     for x:=0 to imgA.Width-1 do
     begin
-      imgMod
+      resGray[x,y] := Round((bmpGray[x,y] + bmpGray2[x,y]) / 2);
+      imgMod.Canvas.Pixels[x,y] := RGB(bmpR[x,y], bmpG[x,y], bmpB[x,y]);
     end;
   end;
 end;
