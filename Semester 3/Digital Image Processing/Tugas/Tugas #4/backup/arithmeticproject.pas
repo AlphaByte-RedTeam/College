@@ -8,7 +8,7 @@ uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs;
 
 type
-  TformArithmetic = class(TForm)
+  TForm1 = class(TForm)
   private
 
   public
@@ -16,7 +16,7 @@ type
   end;
 
 var
-  formArithmetic: TformArithmetic;
+  Form1: TForm1;
 
 implementation
 
