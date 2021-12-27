@@ -40,20 +40,20 @@ object formArithmetic: TformArithmetic
     AutoSize = True
   end
   object imgB: TImage
-    Left = 188
+    Left = 328
     Height = 90
     Top = 216
     Width = 90
     AutoSize = True
   end
   object imgMod: TImage
-    Left = 348
+    Left = 616
     Height = 90
     Top = 216
     Width = 90
     AutoSize = True
   end
-  object RadioGroup1: TRadioGroup
+  object radioLoad: TRadioGroup
     Left = 32
     Height = 80
     Top = 88
@@ -69,6 +69,7 @@ object formArithmetic: TformArithmetic
     ChildSizing.ControlsPerLine = 1
     ClientHeight = 60
     ClientWidth = 181
+    ItemIndex = 0
     Items.Strings = (
       'Image A'
       'Image B'
