@@ -4,5 +4,83 @@ object formArithmetic: TformArithmetic
   Top = 185
   Width = 910
   Caption = 'Arithmetic'
+  ClientHeight = 626
+  ClientWidth = 910
   LCLVersion = '2.0.12.0'
+  object btnLoad: TButton
+    Left = 32
+    Height = 25
+    Top = 32
+    Width = 75
+    Caption = 'Load'
+    OnClick = btnLoadClick
+    TabOrder = 0
+  end
+  object btnSave: TButton
+    Left = 160
+    Height = 25
+    Top = 32
+    Width = 75
+    Caption = 'Save'
+    TabOrder = 1
+  end
+  object btnProcess: TButton
+    Left = 280
+    Height = 25
+    Top = 32
+    Width = 75
+    Caption = 'Process'
+    TabOrder = 2
+  end
+  object imgA: TImage
+    Left = 32
+    Height = 90
+    Top = 216
+    Width = 90
+    AutoSize = True
+  end
+  object imgB: TImage
+    Left = 188
+    Height = 90
+    Top = 216
+    Width = 90
+    AutoSize = True
+  end
+  object imgMod: TImage
+    Left = 348
+    Height = 90
+    Top = 216
+    Width = 90
+    AutoSize = True
+  end
+  object RadioGroup1: TRadioGroup
+    Left = 32
+    Height = 80
+    Top = 88
+    Width = 185
+    AutoFill = True
+    Caption = 'Select Load'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 60
+    ClientWidth = 181
+    Items.Strings = (
+      'Image A'
+      'Image B'
+    )
+    TabOrder = 3
+  end
+  object openDialog: TOpenDialog
+    Left = 440
+    Top = 40
+  end
+  object saveDialog: TSaveDialog
+    Left = 528
+    Top = 40
+  end
 end

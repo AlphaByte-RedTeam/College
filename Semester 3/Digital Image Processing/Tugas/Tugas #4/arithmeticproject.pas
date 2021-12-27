@@ -5,10 +5,23 @@ unit ArithmeticProject;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls;
 
 type
+
+  { TformArithmetic }
+
   TformArithmetic = class(TForm)
+    btnLoad: TButton;
+    btnSave: TButton;
+    btnProcess: TButton;
+    imgA: TImage;
+    imgB: TImage;
+    imgMod: TImage;
+    openDialog: TOpenDialog;
+    RadioGroup1: TRadioGroup;
+    saveDialog: TSaveDialog;
+    procedure btnLoadClick(Sender: TObject);
   private
 
   public
@@ -21,6 +34,11 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TformArithmetic }
+
+uses
+  windows, math;
 
 end.
 
