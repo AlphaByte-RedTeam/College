@@ -1,11 +1,11 @@
 object formArithmetic: TformArithmetic
-  Left = 941
-  Height = 626
-  Top = 185
-  Width = 910
+  Left = 492
+  Height = 673
+  Top = 174
+  Width = 1116
   Caption = 'Arithmetic'
-  ClientHeight = 626
-  ClientWidth = 910
+  ClientHeight = 673
+  ClientWidth = 1116
   LCLVersion = '2.0.12.0'
   object btnLoad: TButton
     Left = 32
@@ -42,14 +42,14 @@ object formArithmetic: TformArithmetic
     AutoSize = True
   end
   object imgB: TImage
-    Left = 328
+    Left = 32
     Height = 90
-    Top = 216
+    Top = 448
     Width = 90
     AutoSize = True
   end
   object imgMod: TImage
-    Left = 616
+    Left = 552
     Height = 90
     Top = 216
     Width = 90
@@ -59,7 +59,7 @@ object formArithmetic: TformArithmetic
     Left = 32
     Height = 80
     Top = 88
-    Width = 185
+    Width = 105
     AutoFill = True
     Caption = 'Select Load'
     ChildSizing.LeftRightSpacing = 6
@@ -70,7 +70,7 @@ object formArithmetic: TformArithmetic
     ChildSizing.Layout = cclLeftToRightThenTopToBottom
     ChildSizing.ControlsPerLine = 1
     ClientHeight = 60
-    ClientWidth = 181
+    ClientWidth = 101
     ItemIndex = 0
     Items.Strings = (
       'Image A'

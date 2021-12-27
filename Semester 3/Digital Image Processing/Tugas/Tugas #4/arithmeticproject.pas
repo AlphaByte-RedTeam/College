@@ -56,6 +56,16 @@ begin
     if openDialog.Execute then
     begin
       imgA.Picture.LoadFromFile(openDialog.FileName);
+
+      imgB.Width := imgA.Width;
+      imgB.Height := imgA.Height;
+      imgB.Top := imgA.Top;
+      imgB.Left := imgA.Left + 10 + imgA.Width;
+      imgMod.Width := imgA.Width;
+      imgMod.Height := imgA.Height;
+      imgMod.Top := imgA.Top;
+      imgMod.Left := imgA.Left + 2 * (10 + imgA.Width);
+
       for y:=0 to imgA.Height-1 do
       begin
         for x:=0 to imgA.Width-1 do
@@ -82,6 +92,16 @@ begin
     if openDialog.Execute then
     begin
       imgB.Picture.LoadFromFile(openDialog.FileName);
+
+      imgB.Width := imgA.Width;
+      imgB.Height := imgA.Height;
+      imgB.Top := imgA.Top;
+      imgB.Left := imgA.Left + 10 + imgA.Width;
+      imgMod.Width := imgA.Width;
+      imgMod.Height := imgA.Height;
+      imgMod.Top := imgA.Top;
+      imgMod.Left := imgA.Left + 2 * (10 + imgA.Width);
+
       for y:=0 to imgB.Height-1 do
       begin
         for x:=0 to imgB.Width-1 do

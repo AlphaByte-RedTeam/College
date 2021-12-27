@@ -1,11 +1,11 @@
 object formArithmetic: TformArithmetic
-  Left = 941
+  Left = 492
   Height = 673
-  Top = 185
-  Width = 910
+  Top = 174
+  Width = 1116
   Caption = 'Arithmetic'
   ClientHeight = 673
-  ClientWidth = 910
+  ClientWidth = 1116
   LCLVersion = '2.0.12.0'
   object btnLoad: TButton
     Left = 32
