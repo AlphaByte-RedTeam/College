@@ -8,6 +8,6 @@ Arithmetic process, specifically about Blending process.
 
 2. Click `Process` button, there you have it </br>
 
-3. Click `Save` button if you want to save the result </br>>
+3. Click `Save` button if you want to save the result </br>
 
 ![tutorial](./tutorial.gif)
