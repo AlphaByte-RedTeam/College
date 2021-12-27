@@ -14,7 +14,7 @@ type
   TFilteringForm = class(TForm)
     editKernel: TEdit;
     imgSketch: TImage;
-    kernelSize: TLabel;
+    lblKernelSize: TLabel;
     btnLoad: TButton;
     btnSave: TButton;
     btnCorrelation: TButton;
@@ -114,7 +114,7 @@ begin
          end;
 
          cBR[x - kHalf, y - kHalf] := constrain(Round(cR));
-         cBG[x - kHalf, y - kHalf] := constrain(Round(cG]);
+         cBG[x - kHalf, y - kHalf] := constrain(Round(cG));
          cBB[x - kHalf, y - kHalf] := constrain(Round(cB));
        end;
      end;
@@ -232,7 +232,7 @@ begin
 
      for y:=0 to __initHeight__-1 do
      begin
-       for x:= to __initWidth__-1 do
+       for x:=0 to __initWidth__-1 do
        begin
          imgMod.Canvas.Pixels[x,y] := RGB(cBGray[x,y], cBGray[x,y], cBGray[x,y]);
 

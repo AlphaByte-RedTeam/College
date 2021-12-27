@@ -31,6 +31,7 @@ object FilteringForm: TFilteringForm
     Top = 72
     Width = 75
     Caption = 'Correlation'
+    OnClick = btnCorrelationClick
     TabOrder = 2
   end
   object btnConvolution: TButton
@@ -39,6 +40,7 @@ object FilteringForm: TFilteringForm
     Top = 72
     Width = 75
     Caption = 'Convolution'
+    OnClick = btnConvolutionClick
     TabOrder = 3
   end
   object radioFilterMode: TRadioGroup
@@ -93,12 +95,14 @@ object FilteringForm: TFilteringForm
     Height = 90
     Top = 216
     Width = 90
+    AutoSize = True
   end
   object imgMod: TImage
-    Left = 496
+    Left = 424
     Height = 90
     Top = 216
     Width = 90
+    AutoSize = True
   end
   object editKernel: TEdit
     Left = 144
@@ -108,7 +112,7 @@ object FilteringForm: TFilteringForm
     TabOrder = 6
     TextHint = 'Input size here'
   end
-  object kernelSize: TLabel
+  object lblKernelSize: TLabel
     Left = 47
     Height = 20
     Top = 125
@@ -123,6 +127,13 @@ object FilteringForm: TFilteringForm
     Font.Style = [fsBold]
     ParentColor = False
     ParentFont = False
+  end
+  object imgSketch: TImage
+    Left = 760
+    Height = 90
+    Top = 216
+    Width = 90
+    AutoSize = True
   end
   object openDialog: TOpenDialog
     Left = 784

@@ -112,7 +112,7 @@ object FilteringForm: TFilteringForm
     TabOrder = 6
     TextHint = 'Input size here'
   end
-  object kernelSize: TLabel
+  object lblKernelSize: TLabel
     Left = 47
     Height = 20
     Top = 125

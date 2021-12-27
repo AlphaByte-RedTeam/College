@@ -22,8 +22,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="FilteringProject"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="26"/>
-        <CursorPos X="7" Y="62"/>
+        <TopLine Value="216"/>
+        <CursorPos X="16" Y="235"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -48,7 +48,7 @@
       </Position4>
       <Position5>
         <Filename Value="filteringproject.pas"/>
-        <Caret Line="59" Column="24" TopLine="26"/>
+        <Caret Line="59" Column="43" TopLine="32"/>
       </Position5>
     </JumpHistory>
     <RunParams>

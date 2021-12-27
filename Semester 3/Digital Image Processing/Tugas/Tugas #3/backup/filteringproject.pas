@@ -14,7 +14,7 @@ type
   TFilteringForm = class(TForm)
     editKernel: TEdit;
     imgSketch: TImage;
-    kernelSize: TLabel;
+    lblKernelSize: TLabel;
     btnLoad: TButton;
     btnSave: TButton;
     btnCorrelation: TButton;
@@ -114,7 +114,7 @@ begin
          end;
 
          cBR[x - kHalf, y - kHalf] := constrain(Round(cR));
-         cBG[x - kHalf, y - kHalf] := constrain(Round(cG]);
+         cBG[x - kHalf, y - kHalf] := constrain(Round(cG));
          cBB[x - kHalf, y - kHalf] := constrain(Round(cB));
        end;
      end;
