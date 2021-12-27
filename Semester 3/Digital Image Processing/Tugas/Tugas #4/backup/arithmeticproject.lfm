@@ -22,6 +22,7 @@ object formArithmetic: TformArithmetic
     Top = 32
     Width = 75
     Caption = 'Save'
+    OnClick = btnSaveClick
     TabOrder = 1
   end
   object btnProcess: TButton
@@ -30,6 +31,7 @@ object formArithmetic: TformArithmetic
     Top = 32
     Width = 75
     Caption = 'Process'
+    OnClick = btnProcessClick
     TabOrder = 2
   end
   object imgA: TImage

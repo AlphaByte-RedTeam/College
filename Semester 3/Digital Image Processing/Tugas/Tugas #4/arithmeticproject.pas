@@ -22,6 +22,7 @@ type
     radioLoad: TRadioGroup;
     saveDialog: TSaveDialog;
     procedure btnLoadClick(Sender: TObject);
+    procedure btnProcessClick(Sender: TObject);
     procedure btnSaveClick(Sender: TObject);
   private
 
@@ -43,6 +44,7 @@ uses
 
 var
   bmpR, bmpG, bmpB: array[0..1000, 0..1000] of byte;
+  resR, resG, resB: array[0..1000, 0..1000] of byte;
 
 procedure TformArithmetic.btnLoadClick(Sender: TObject);
 var
@@ -78,6 +80,21 @@ begin
           bmpB[x,y] := Blue(imgB.Canvas.Pixels[x,y]);
         end;
       end;
+    end;
+  end;
+end;
+
+procedure TformArithmetic.btnProcessClick(Sender: TObject);
+var
+  bR, bG, bB: integer;
+  temp: double;
+  x, y, R, G, B: integer;
+begin
+  for y:=0 to imgA.Height-1 do
+  begin
+    for x:=0 to imgA.Width-1 do
+    begin
+      imgMod.Canvas.Pixels[x,y] := RGB(bmpR[x,y], bmpG[x,y], bmpB[x,y]);
     end;
   end;
 end;
