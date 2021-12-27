@@ -40,14 +40,14 @@ object formArithmetic: TformArithmetic
     AutoSize = True
   end
   object imgB: TImage
-    Left = 188
+    Left = 328
     Height = 90
     Top = 216
     Width = 90
     AutoSize = True
   end
   object imgMod: TImage
-    Left = 348
+    Left = 616
     Height = 90
     Top = 216
     Width = 90
