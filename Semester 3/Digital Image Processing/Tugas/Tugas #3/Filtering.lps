@@ -22,14 +22,14 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="FilteringProject"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="216"/>
-        <CursorPos X="16" Y="235"/>
+        <TopLine Value="155"/>
+        <CursorPos X="49" Y="168"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
     </Units>
-    <JumpHistory Count="5" HistoryIndex="4">
+    <JumpHistory Count="13" HistoryIndex="12">
       <Position1>
         <Filename Value="filteringproject.pas"/>
         <Caret Line="21" Column="53"/>
@@ -50,6 +50,38 @@
         <Filename Value="filteringproject.pas"/>
         <Caret Line="59" Column="43" TopLine="32"/>
       </Position5>
+      <Position6>
+        <Filename Value="filteringproject.pas"/>
+        <Caret Line="238" Column="23" TopLine="213"/>
+      </Position6>
+      <Position7>
+        <Filename Value="filteringproject.pas"/>
+        <Caret Line="183" Column="188" TopLine="143"/>
+      </Position7>
+      <Position8>
+        <Filename Value="filteringproject.pas"/>
+        <Caret Line="182" Column="188" TopLine="145"/>
+      </Position8>
+      <Position9>
+        <Filename Value="filteringproject.pas"/>
+        <Caret Line="159" Column="27" TopLine="107"/>
+      </Position9>
+      <Position10>
+        <Filename Value="filteringproject.pas"/>
+        <Caret Line="155" Column="13" TopLine="137"/>
+      </Position10>
+      <Position11>
+        <Filename Value="filteringproject.pas"/>
+        <Caret Line="357" Column="33" TopLine="341"/>
+      </Position11>
+      <Position12>
+        <Filename Value="filteringproject.pas"/>
+        <Caret Line="356" Column="33" TopLine="340"/>
+      </Position12>
+      <Position13>
+        <Filename Value="filteringproject.pas"/>
+        <Caret Line="357" Column="33" TopLine="299"/>
+      </Position13>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

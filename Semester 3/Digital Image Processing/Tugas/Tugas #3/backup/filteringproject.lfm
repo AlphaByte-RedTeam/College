@@ -1,7 +1,7 @@
 object FilteringForm: TFilteringForm
-  Left = 900
+  Left = 822
   Height = 629
-  Top = 185
+  Top = 188
   Width = 1007
   HorzScrollBar.Page = 850
   VertScrollBar.Page = 306
