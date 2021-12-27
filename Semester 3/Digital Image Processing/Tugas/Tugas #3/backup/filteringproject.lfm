@@ -3,6 +3,9 @@ object FilteringForm: TFilteringForm
   Height = 629
   Top = 185
   Width = 948
+  HorzScrollBar.Page = 850
+  VertScrollBar.Page = 306
+  AutoScroll = True
   Caption = 'Filtering'
   ClientHeight = 629
   ClientWidth = 948
@@ -85,8 +88,8 @@ object FilteringForm: TFilteringForm
     ClientWidth = 181
     ItemIndex = 0
     Items.Strings = (
-      'Colorful'
       'Grayscale'
+      'Colorful'
     )
     TabOrder = 5
   end

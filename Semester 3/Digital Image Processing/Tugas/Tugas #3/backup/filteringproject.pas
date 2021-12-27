@@ -232,7 +232,7 @@ begin
 
      for y:=0 to __initHeight__-1 do
      begin
-       for x:= to __initWidth__-1 do
+       for x:=0 to __initWidth__-1 do
        begin
          imgMod.Canvas.Pixels[x,y] := RGB(cBGray[x,y], cBGray[x,y], cBGray[x,y]);
 
